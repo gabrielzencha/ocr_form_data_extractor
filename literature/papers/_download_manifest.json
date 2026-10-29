@@ -1,0 +1,2254 @@
+{
+ "meta": {
+  "2302.05658": {
+   "id": "2302.05658",
+   "title": "DocILE Benchmark for Document Information Localization and Extraction",
+   "authors": [
+    "\u0160t\u011bp\u00e1n \u0160imsa",
+    "Milan \u0160ulc",
+    "Michal U\u0159i\u010d\u00e1\u0159",
+    "Yash Patel",
+    "Ahmed Hamdi",
+    "Mat\u011bj Koci\u00e1n",
+    "Maty\u00e1\u0161 Skalick\u00fd",
+    "Ji\u0159\u00ed Matas",
+    "Antoine Doucet",
+    "Micka\u00ebl Coustaty",
+    "Dimosthenis Karatzas"
+   ],
+   "published": "2023-02-11",
+   "summary": "This paper introduces the DocILE benchmark with the largest dataset of business documents for the tasks of Key Information Localization and Extraction and Line Item Recognition. It contains 6.7k annotated business documents, 100k synthetically generated documents, and nearly~1M unlabeled documents for unsupervised pre-training. The dataset has been built with knowledge of domain- and task-specific aspects, resulting in the following key features: (i) annotations in 55 classes, which surpasses the granularity of previously published key information extraction datasets by a large margin; (ii) Line Item Recognition represents a highly practical information extraction task, where key information has to be assigned to items in a table; (iii) documents come from numerous layouts and the test set includes zero- and few-shot cases as well as layouts commonly seen in the training set. The benchmark comes with several baselines, including RoBERTa, LayoutLMv3 and DETR-based Table Transformer; applied to both tasks of the DocILE benchmark, with results shared in this paper, offering a quick starting point for future work. The dataset, baselines and supplementary material are available at https://github.com/rossumai/docile."
+  },
+  "2104.08836": {
+   "id": "2104.08836",
+   "title": "LayoutXLM: Multimodal Pre-training for Multilingual Visually-rich Document Understanding",
+   "authors": [
+    "Yiheng Xu",
+    "Tengchao Lv",
+    "Lei Cui",
+    "Guoxin Wang",
+    "Yijuan Lu",
+    "Dinei Florencio",
+    "Cha Zhang",
+    "Furu Wei"
+   ],
+   "published": "2021-04-18",
+   "summary": "Multimodal pre-training with text, layout, and image has achieved SOTA performance for visually-rich document understanding tasks recently, which demonstrates the great potential for joint learning across different modalities. In this paper, we present LayoutXLM, a multimodal pre-trained model for multilingual document understanding, which aims to bridge the language barriers for visually-rich document understanding. To accurately evaluate LayoutXLM, we also introduce a multilingual form understanding benchmark dataset named XFUND, which includes form understanding samples in 7 languages (Chinese, Japanese, Spanish, French, Italian, German, Portuguese), and key-value pairs are manually labeled for each language. Experiment results show that the LayoutXLM model has significantly outperformed the existing SOTA cross-lingual pre-trained models on the XFUND dataset. The pre-trained LayoutXLM model and the XFUND dataset are publicly available at https://aka.ms/layoutxlm."
+  },
+  "2509.16506": {
+   "id": "2509.16506",
+   "title": "CommonForms: A Large, Diverse Dataset for Form Field Detection",
+   "authors": [
+    "Joe Barrow"
+   ],
+   "published": "2025-09-20",
+   "summary": "This paper introduces CommonForms, a web-scale dataset for form field detection. It casts the problem of form field detection as object detection: given an image of a page, predict the location and type (Text Input, Choice Button, Signature) of form fields. The dataset is constructed by filtering Common Crawl to find PDFs that have fillable elements. Starting with 8 million documents, the filtering process is used to arrive at a final dataset of roughly 55k documents that have over 450k pages. Analysis shows that the dataset contains a diverse mixture of languages and domains; one third of the pages are non-English, and among the 14 classified domains, no domain makes up more than 25% of the dataset. In addition, this paper presents a family of form field detectors, FFDNet-Small and FFDNet-Large, which attain a very high average precision on the CommonForms test set. Each model cost less than $500 to train. Ablation results show that high-resolution inputs are crucial for high-quality form field detection, and that the cleaning process improves data efficiency over using all PDFs that have fillable fields in Common Crawl. A qualitative analysis shows that they outperform a popular, commercially available PDF reader that can prepare forms. Unlike the most popular commercially available solutions, FFDNet can predict checkboxes in addition to text and signature fields. This is, to our knowledge, the first large scale dataset released for form field detection, as well as the first open source models. The dataset, models, and code will be released at https://github.com/jbarrow/commonforms"
+  },
+  "2007.00398": {
+   "id": "2007.00398",
+   "title": "DocVQA: A Dataset for VQA on Document Images",
+   "authors": [
+    "Minesh Mathew",
+    "Dimosthenis Karatzas",
+    "C. V. Jawahar"
+   ],
+   "published": "2020-07-01",
+   "summary": "We present a new dataset for Visual Question Answering (VQA) on document images called DocVQA. The dataset consists of 50,000 questions defined on 12,000+ document images. Detailed analysis of the dataset in comparison with similar datasets for VQA and reading comprehension is presented. We report several baseline results by adopting existing VQA and reading comprehension models. Although the existing models perform reasonably well on certain types of questions, there is large performance gap compared to human performance (94.36% accuracy). The models need to improve specifically on questions where understanding structure of the document is crucial. The dataset, code and leaderboard are available at docvqa.org"
+  },
+  "2010.02358": {
+   "id": "2010.02358",
+   "title": "VisualWordGrid: Information Extraction From Scanned Documents Using A Multimodal Approach",
+   "authors": [
+    "Mohamed Kerroumi",
+    "Othmane Sayem",
+    "Aymen Shabou"
+   ],
+   "published": "2020-10-05",
+   "summary": "We introduce a novel approach for scanned document representation to perform field extraction. It allows the simultaneous encoding of the textual, visual and layout information in a 3-axis tensor used as an input to a segmentation model. We improve the recent Chargrid and Wordgrid \\cite{chargrid} models in several ways, first by taking into account the visual modality, then by boosting its robustness in regards to small datasets while keeping the inference time low. Our approach is tested on public and private document-image datasets, showing higher performances compared to the recent state-of-the-art methods."
+  },
+  "2202.13669": {
+   "id": "2202.13669",
+   "title": "LiLT: A Simple yet Effective Language-Independent Layout Transformer for Structured Document Understanding",
+   "authors": [
+    "Jiapeng Wang",
+    "Lianwen Jin",
+    "Kai Ding"
+   ],
+   "published": "2022-02-28",
+   "summary": "Structured document understanding has attracted considerable attention and made significant progress recently, owing to its crucial role in intelligent document processing. However, most existing related models can only deal with the document data of specific language(s) (typically English) included in the pre-training collection, which is extremely limited. To address this issue, we propose a simple yet effective Language-independent Layout Transformer (LiLT) for structured document understanding. LiLT can be pre-trained on the structured documents of a single language and then directly fine-tuned on other languages with the corresponding off-the-shelf monolingual/multilingual pre-trained textual models. Experimental results on eight languages have shown that LiLT can achieve competitive or even superior performance on diverse widely-used downstream benchmarks, which enables language-independent benefit from the pre-training of document layout structure. Code and model are publicly available at https://github.com/jpWang/LiLT."
+  },
+  "2211.15421": {
+   "id": "2211.15421",
+   "title": "VRDU: A Benchmark for Visually-rich Document Understanding",
+   "authors": [
+    "Zilong Wang",
+    "Yichao Zhou",
+    "Wei Wei",
+    "Chen-Yu Lee",
+    "Sandeep Tata"
+   ],
+   "published": "2022-11-15",
+   "summary": "Understanding visually-rich business documents to extract structured data and automate business workflows has been receiving attention both in academia and industry. Although recent multi-modal language models have achieved impressive results, we find that existing benchmarks do not reflect the complexity of real documents seen in industry. In this work, we identify the desiderata for a more comprehensive benchmark and propose one we call Visually Rich Document Understanding (VRDU). VRDU contains two datasets that represent several challenges: rich schema including diverse data types as well as hierarchical entities, complex templates including tables and multi-column layouts, and diversity of different layouts (templates) within a single document type. We design few-shot and conventional experiment settings along with a carefully designed matching algorithm to evaluate extraction results. We report the performance of strong baselines and offer three observations: (1) generalizing to new document templates is still very challenging, (2) few-shot performance has a lot of headroom, and (3) models struggle with hierarchical fields such as line-items in an invoice. We plan to open source the benchmark and the evaluation toolkit. We hope this helps the community make progress on these challenging tasks in extracting structured data from visually rich documents."
+  },
+  "2208.11168": {
+   "id": "2208.11168",
+   "title": "Doc2Graph: a Task Agnostic Document Understanding Framework based on Graph Neural Networks",
+   "authors": [
+    "Andrea Gemelli",
+    "Sanket Biswas",
+    "Enrico Civitelli",
+    "Josep Llad\u00f3s",
+    "Simone Marinai"
+   ],
+   "published": "2022-08-23",
+   "summary": "Geometric Deep Learning has recently attracted significant interest in a wide range of machine learning fields, including document analysis. The application of Graph Neural Networks (GNNs) has become crucial in various document-related tasks since they can unravel important structural patterns, fundamental in key information extraction processes. Previous works in the literature propose task-driven models and do not take into account the full power of graphs. We propose Doc2Graph, a task-agnostic document understanding framework based on a GNN model, to solve different tasks given different types of documents. We evaluated our approach on two challenging datasets for key information extraction in form understanding, invoice layout analysis and table detection. Our code is freely accessible on https://github.com/andreagemelli/doc2graph."
+  },
+  "2405.03104": {
+   "id": "2405.03104",
+   "title": "GeoContrastNet: Contrastive Key-Value Edge Learning for Language-Agnostic Document Understanding",
+   "authors": [
+    "Nil Biescas",
+    "Carlos Boned",
+    "Josep Llad\u00f3s",
+    "Sanket Biswas"
+   ],
+   "published": "2024-05-06",
+   "summary": "This paper presents GeoContrastNet, a language-agnostic framework to structured document understanding (DU) by integrating a contrastive learning objective with graph attention networks (GATs), emphasizing the significant role of geometric features. We propose a novel methodology that combines geometric edge features with visual features within an overall two-staged GAT-based framework, demonstrating promising results in both link prediction and semantic entity recognition performance. Our findings reveal that combining both geometric and visual features could match the capabilities of large DU models that rely heavily on Optical Character Recognition (OCR) features in terms of performance accuracy and efficiency. This approach underscores the critical importance of relational layout information between the named text entities in a semi-structured layout of a page. Specifically, our results highlight the model's proficiency in identifying key-value relationships within the FUNSD dataset for forms and also discovering the spatial relationships in table-structured layouts for RVLCDIP business invoices. Our code and pretrained models will be accessible on our official GitHub."
+  },
+  "2304.13606": {
+   "id": "2304.13606",
+   "title": "SIMARA: a database for key-value information extraction from full pages",
+   "authors": [
+    "Sol\u00e8ne Tarride",
+    "M\u00e9lodie Boillet",
+    "Jean-Fran\u00e7ois Moufflet",
+    "Christopher Kermorvant"
+   ],
+   "published": "2023-04-26",
+   "summary": "We propose a new database for information extraction from historical handwritten documents. The corpus includes 5,393 finding aids from six different series, dating from the 18th-20th centuries. Finding aids are handwritten documents that contain metadata describing older archives. They are stored in the National Archives of France and are used by archivists to identify and find archival documents. Each document is annotated at page-level, and contains seven fields to retrieve. The localization of each field is not available in such a way that this dataset encourages research on segmentation-free systems for information extraction. We propose a model based on the Transformer architecture trained for end-to-end information extraction and provide three sets for training, validation and testing, to ensure fair comparison with future works. The database is freely accessible at https://zenodo.org/record/7868059."
+  },
+  "2010.05322": {
+   "id": "2010.05322",
+   "title": "Revising FUNSD dataset for key-value detection in document images",
+   "authors": [
+    "Hieu M. Vu",
+    "Diep Thi-Ngoc Nguyen"
+   ],
+   "published": "2020-10-11",
+   "summary": "FUNSD is one of the limited publicly available datasets for information extraction from document im-ages. The information in the FUNSD dataset is defined by text areas of four categories (\"key\", \"value\", \"header\", \"other\", and \"background\") and connectivity between areas as key-value relations. In-specting FUNSD, we found several inconsistency in labeling, which impeded its applicability to thekey-value extraction problem. In this report, we described some labeling issues in FUNSD and therevision we made to the dataset. We also reported our implementation of for key-value detection onFUNSD using a UNet model as baseline results and an improved UNet model with Channel-InvariantDeformable Convolution."
+  },
+  "2206.01062": {
+   "id": "2206.01062",
+   "title": "DocLayNet: A Large Human-Annotated Dataset for Document-Layout Analysis",
+   "authors": [
+    "Birgit Pfitzmann",
+    "Christoph Auer",
+    "Michele Dolfi",
+    "Ahmed S Nassar",
+    "Peter W J Staar"
+   ],
+   "published": "2022-06-02",
+   "summary": "Accurate document layout analysis is a key requirement for high-quality PDF document conversion. With the recent availability of public, large ground-truth datasets such as PubLayNet and DocBank, deep-learning models have proven to be very effective at layout detection and segmentation. While these datasets are of adequate size to train such models, they severely lack in layout variability since they are sourced from scientific article repositories such as PubMed and arXiv only. Consequently, the accuracy of the layout segmentation drops significantly when these models are applied on more challenging and diverse layouts. In this paper, we present \\textit{DocLayNet}, a new, publicly available, document-layout annotation dataset in COCO format. It contains 80863 manually annotated pages from diverse data sources to represent a wide variability in layouts. For each PDF page, the layout annotations provide labelled bounding-boxes with a choice of 11 distinct classes. DocLayNet also provides a subset of double- and triple-annotated pages to determine the inter-annotator agreement. In multiple experiments, we provide baseline accuracy scores (in mAP) for a set of popular object detection models. We also demonstrate that these models fall approximately 10\\% behind the inter-annotator agreement. Furthermore, we provide evidence that DocLayNet is of sufficient size. Lastly, we compare models trained on PubLayNet, DocBank and DocLayNet, showing that layout predictions of the DocLayNet-trained models are more robust and thus the preferred choice for general-purpose document-layout analysis."
+  },
+  "1809.08799": {
+   "id": "1809.08799",
+   "title": "Chargrid: Towards Understanding 2D Documents",
+   "authors": [
+    "Anoop Raveendra Katti",
+    "Christian Reisswig",
+    "Cordula Guder",
+    "Sebastian Brarda",
+    "Steffen Bickel",
+    "Johannes H\u00f6hne",
+    "Jean Baptiste Faddoul"
+   ],
+   "published": "2018-09-24",
+   "summary": "We introduce a novel type of text representation that preserves the 2D layout of a document. This is achieved by encoding each document page as a two-dimensional grid of characters. Based on this representation, we present a generic document understanding pipeline for structured documents. This pipeline makes use of a fully convolutional encoder-decoder network that predicts a segmentation mask and bounding boxes. We demonstrate its capabilities on an information extraction task from invoices and show that it significantly outperforms approaches based on sequential text or document images."
+  },
+  "2408.01287": {
+   "id": "2408.01287",
+   "title": "Deep Learning based Visually Rich Document Content Understanding: A Survey",
+   "authors": [
+    "Yihao Ding",
+    "Soyeon Caren Han",
+    "Jean Lee",
+    "Eduard Hovy"
+   ],
+   "published": "2024-08-02",
+   "summary": "Visually Rich Documents (VRDs) play a vital role in domains such as academia, finance, healthcare, and marketing, as they convey information through a combination of text, layout, and visual elements. Traditional approaches to extracting information from VRDs rely heavily on expert knowledge and manual annotation, making them labor-intensive and inefficient. Recent advances in deep learning have transformed this landscape by enabling multimodal models that integrate vision, language, and layout features through pretraining, significantly improving information extraction performance. This survey presents a comprehensive overview of deep learning-based frameworks for VRD Content Understanding (VRD-CU). We categorize existing methods based on their modeling strategies and downstream tasks, and provide a comparative analysis of key components, including feature representation, fusion techniques, model architectures, and pretraining objectives. Additionally, we highlight the strengths and limitations of each approach and discuss their suitability for different applications. The paper concludes with a discussion of current challenges and emerging trends, offering guidance for future research and practical deployment in real-world scenarios."
+  },
+  "2105.08194": {
+   "id": "2105.08194",
+   "title": "Visual FUDGE: Form Understanding via Dynamic Graph Editing",
+   "authors": [
+    "Brian Davis",
+    "Bryan Morse\u007f",
+    "Brian Price\u007f",
+    "Chris Tensmeyer\u007f",
+    "Curtis Wiginton"
+   ],
+   "published": "2021-05-17",
+   "summary": "We address the problem of form understanding: finding text entities and the relationships/links between them in form images. The proposed FUDGE model formulates this problem on a graph of text elements (the vertices) and uses a Graph Convolutional Network to predict changes to the graph. The initial vertices are detected text lines and do not necessarily correspond to the final text entities, which can span multiple lines. Also, initial edges contain many false-positive relationships. FUDGE edits the graph structure by combining text segments (graph vertices) and pruning edges in an iterative fashion to obtain the final text entities and relationships. While recent work in this area has focused on leveraging large-scale pre-trained Language Models (LM), FUDGE achieves almost the same level of entity linking performance on the FUNSD dataset by learning only visual features from the (small) provided training set. FUDGE can be applied on forms where text recognition is difficult (e.g. degraded or historical forms) and on forms in resource-poor languages where pre-training such LMs is challenging. FUDGE is state-of-the-art on the historical NAF dataset."
+  },
+  "2405.00505": {
+   "id": "2405.00505",
+   "title": "KVP10k : A Comprehensive Dataset for Key-Value Pair Extraction in Business Documents",
+   "authors": [
+    "Oshri Naparstek",
+    "Roi Pony",
+    "Inbar Shapira",
+    "Foad Abo Dahood",
+    "Ophir Azulai",
+    "Yevgeny Yaroker",
+    "Nadav Rubinstein",
+    "Maksym Lysak",
+    "Peter Staar",
+    "Ahmed Nassar",
+    "Nikolaos Livathinos",
+    "Christoph Auer",
+    "Elad Amrani",
+    "Idan Friedman",
+    "Orit Prince",
+    "Yevgeny Burshtein",
+    "Adi Raz Goldfarb",
+    "Udi Barzelay"
+   ],
+   "published": "2024-05-01",
+   "summary": "In recent years, the challenge of extracting information from business documents has emerged as a critical task, finding applications across numerous domains. This effort has attracted substantial interest from both industry and academy, highlighting its significance in the current technological landscape. Most datasets in this area are primarily focused on Key Information Extraction (KIE), where the extraction process revolves around extracting information using a specific, predefined set of keys. Unlike most existing datasets and benchmarks, our focus is on discovering key-value pairs (KVPs) without relying on predefined keys, navigating through an array of diverse templates and complex layouts. This task presents unique challenges, primarily due to the absence of comprehensive datasets and benchmarks tailored for non-predetermined KVP extraction. To address this gap, we introduce KVP10k , a new dataset and benchmark specifically designed for KVP extraction. The dataset contains 10707 richly annotated images. In our benchmark, we also introduce a new challenging task that combines elements of KIE as well as KVP in a single task. KVP10k sets itself apart with its extensive diversity in data and richly detailed annotations, paving the way for advancements in the field of information extraction from complex business documents."
+  },
+  "2507.09861": {
+   "id": "2507.09861",
+   "title": "A Survey on MLLM-based Visually Rich Document Understanding: Methods, Challenges, and Emerging Trends",
+   "authors": [
+    "Yihao Ding",
+    "Siwen Luo",
+    "Yue Dai",
+    "Yanbei Jiang",
+    "Zechuan Li",
+    "Qiang Sun",
+    "Geoffrey Martin",
+    "Wei Liu",
+    "Yifan Peng"
+   ],
+   "published": "2025-07-14",
+   "summary": "Visually Rich Document Understanding (VRDU) has become a pivotal area of research, driven by the need to automatically interpret documents that contain intricate visual, textual, and structural elements. Recently, Multimodal Large Language Models (MLLMs) have demonstrated significant promise in this domain, including both OCR-based and OCR-free approaches for information extraction from document images. This survey reviews recent advances in MLLM-based VRDU, highlighting emerging trends and promising research directions with a focus on two key aspects: (1) techniques for representing and integrating textual, visual, and layout features; (2) training paradigms, including pretraining, instruction tuning, and training strategies. Moreover, we address challenges such as data scarcity, handling multi-page and multilingual documents, and integrating emerging trends such as Retrieval-Augmented Generation and agentic frameworks. Our analysis offers a roadmap for advancing MLLM-based VRDU toward more scalable, reliable, and adaptable systems."
+  },
+  "2607.05614": {
+   "id": "2607.05614",
+   "title": "BaFCo: A Document Understanding Benchmark for Complex Bangla Form Comprehension",
+   "authors": [
+    "Abu Tyeb Azad",
+    "Ishita Sur Apan",
+    "Fahim Ahmed",
+    "Sumaiya Karim Katha",
+    "Ezharuddin Jubaer",
+    "Armun Alam",
+    "Pranjal Kumar Nandi",
+    "Amin Ahsan Ali",
+    "Aman Chadha",
+    "Md Mofijul Islam",
+    "AKM Mahbubur Rahman"
+   ],
+   "published": "2026-07-06",
+   "summary": "Document comprehension is a challenging yet impactful task for Multimodal Large Language Models, especially as these systems see growing adoption in real-world, human-centric applications. However, this adoption is limited for low-resource languages such as Bangla due to the scarcity of high-quality annotated data. To address this gap, we introduce BaFCo, a benchmark dataset for Bangla form comprehension with a focus on Document Layout Analysis (DLA) and Key Information Extraction (KIE). BaFCo curates 200 multi-page complex Bangladeshi government forms, sourced from across diverse sectors including agriculture, education, banking, and land management. To accurately capture the structural and contextual complexity of these forms, we define a fine-grained annotation schema comprising 26 types of form entities, along with a separate coarse form entity set consisting of 5 types. We evaluate the latest MLLMs from the ChatGPT, Gemini, Claude, Qwen, and Kimi series using zero-shot and chain-of-thought prompts under both low and high reasoning setups. Our results reveal limitations in current MLLMs' ability in comprehending Bangla forms, particularly in accurately localizing highly granular form entities. Our dataset and code is available at: https://huggingface.co/datasets/Mausul/bafco"
+  },
+  "2307.10551": {
+   "id": "2307.10551",
+   "title": "PPN: Parallel Pointer-based Network for Key Information Extraction with Complex Layouts",
+   "authors": [
+    "Kaiwen Wei",
+    "Jie Yao",
+    "Jingyuan Zhang",
+    "Yangyang Kang",
+    "Fubang Zhao",
+    "Yating Zhang",
+    "Changlong Sun",
+    "Xin Jin",
+    "Xin Zhang"
+   ],
+   "published": "2023-07-20",
+   "summary": "Key Information Extraction (KIE) is a challenging multimodal task that aims to extract structured value semantic entities from visually rich documents. Although significant progress has been made, there are still two major challenges that need to be addressed. Firstly, the layout of existing datasets is relatively fixed and limited in the number of semantic entity categories, creating a significant gap between these datasets and the complex real-world scenarios. Secondly, existing methods follow a two-stage pipeline strategy, which may lead to the error propagation problem. Additionally, they are difficult to apply in situations where unseen semantic entity categories emerge. To address the first challenge, we propose a new large-scale human-annotated dataset named Complex Layout form for key information EXtraction (CLEX), which consists of 5,860 images with 1,162 semantic entity categories. To solve the second challenge, we introduce Parallel Pointer-based Network (PPN), an end-to-end model that can be applied in zero-shot and few-shot scenarios. PPN leverages the implicit clues between semantic entities to assist extracting, and its parallel extraction mechanism allows it to extract multiple results simultaneously and efficiently. Experiments on the CLEX dataset demonstrate that PPN outperforms existing state-of-the-art methods while also offering a much faster inference speed."
+  },
+  "1905.13538": {
+   "id": "1905.13538",
+   "title": "FUNSD: A Dataset for Form Understanding in Noisy Scanned Documents",
+   "authors": [
+    "Guillaume Jaume",
+    "Hazim Kemal Ekenel",
+    "Jean-Philippe Thiran"
+   ],
+   "published": "2019-05-27",
+   "summary": "We present a new dataset for form understanding in noisy scanned documents (FUNSD) that aims at extracting and structuring the textual content of forms. The dataset comprises 199 real, fully annotated, scanned forms. The documents are noisy and vary widely in appearance, making form understanding (FoUn) a challenging task. The proposed dataset can be used for various tasks, including text detection, optical character recognition, spatial layout analysis, and entity labeling/linking. To the best of our knowledge, this is the first publicly available dataset with comprehensive annotations to address FoUn task. We also present a set of baselines and introduce metrics to evaluate performance on the FUNSD dataset, which can be downloaded at https://guillaumejaume.github.io/FUNSD/."
+  },
+  "1909.02576": {
+   "id": "1909.02576",
+   "title": "Deep Visual Template-Free Form Parsing",
+   "authors": [
+    "Brian Davis",
+    "Bryan Morse",
+    "Scott Cohen",
+    "Brian Price",
+    "Chris Tensmeyer"
+   ],
+   "published": "2019-09-05",
+   "summary": "Automatic, template-free extraction of information from form images is challenging due to the variety of form layouts. This is even more challenging for historical forms due to noise and degradation. A crucial part of the extraction process is associating input text with pre-printed labels. We present a learned, template-free solution to detecting pre-printed text and input text/handwriting and predicting pair-wise relationships between them. While previous approaches to this problem have been focused on clean images and clear layouts, we show our approach is effective in the domain of noisy, degraded, and varied form images. We introduce a new dataset of historical form images (late 1800s, early 1900s) for training and validating our approach. Our method uses a convolutional network to detect pre-printed text and input text lines. We pool features from the detection network to classify possible relationships in a language-agnostic way. We show that our proposed pairing method outperforms heuristic rules and that visual features are critical to obtaining high accuracy."
+  },
+  "2103.10213": {
+   "id": "2103.10213",
+   "title": "ICDAR2019 Competition on Scanned Receipt OCR and Information Extraction",
+   "authors": [
+    "Zheng Huang",
+    "Kai Chen",
+    "Jianhua He",
+    "Xiang Bai",
+    "Dimosthenis Karatzas",
+    "Shjian Lu",
+    "C. V. Jawahar"
+   ],
+   "published": "2021-03-18",
+   "summary": "Scanned receipts OCR and key information extraction (SROIE) represent the processeses of recognizing text from scanned receipts and extracting key texts from them and save the extracted tests to structured documents. SROIE plays critical roles for many document analysis applications and holds great commercial potentials, but very little research works and advances have been published in this area. In recognition of the technical challenges, importance and huge commercial potentials of SROIE, we organized the ICDAR 2019 competition on SROIE. In this competition, we set up three tasks, namely, Scanned Receipt Text Localisation (Task 1), Scanned Receipt OCR (Task 2) and Key Information Extraction from Scanned Receipts (Task 3). A new dataset with 1000 whole scanned receipt images and annotations is created for the competition. In this report we will presents the motivation, competition datasets, task definition, evaluation protocol, submission statistics, performance of submitted methods and results analysis."
+  },
+  "2111.08609": {
+   "id": "2111.08609",
+   "title": "Document AI: Benchmarks, Models and Applications",
+   "authors": [
+    "Lei Cui",
+    "Yiheng Xu",
+    "Tengchao Lv",
+    "Furu Wei"
+   ],
+   "published": "2021-11-16",
+   "summary": "Document AI, or Document Intelligence, is a relatively new research topic that refers to the techniques for automatically reading, understanding, and analyzing business documents. It is an important research direction for natural language processing and computer vision. In recent years, the popularity of deep learning technology has greatly advanced the development of Document AI, such as document layout analysis, visual information extraction, document visual question answering, document image classification, etc. This paper briefly reviews some of the representative models, tasks, and benchmark datasets. Furthermore, we also introduce early-stage heuristic rule-based document analysis, statistical machine learning algorithms, and deep learning approaches especially pre-training methods. Finally, we look into future directions for Document AI research."
+  },
+  "2105.05796": {
+   "id": "2105.05796",
+   "title": "Kleister: Key Information Extraction Datasets Involving Long Documents with Complex Layouts",
+   "authors": [
+    "Tomasz Stanis\u0142awek",
+    "Filip Grali\u0144ski",
+    "Anna Wr\u00f3blewska",
+    "Dawid Lipi\u0144ski",
+    "Agnieszka Kaliska",
+    "Paulina Rosalska",
+    "Bartosz Topolski",
+    "Przemys\u0142aw Biecek"
+   ],
+   "published": "2021-05-12",
+   "summary": "The relevance of the Key Information Extraction (KIE) task is increasingly important in natural language processing problems. But there are still only a few well-defined problems that serve as benchmarks for solutions in this area. To bridge this gap, we introduce two new datasets (Kleister NDA and Kleister Charity). They involve a mix of scanned and born-digital long formal English-language documents. In these datasets, an NLP system is expected to find or infer various types of entities by employing both textual and structural layout features. The Kleister Charity dataset consists of 2,788 annual financial reports of charity organizations, with 61,643 unique pages and 21,612 entities to extract. The Kleister NDA dataset has 540 Non-disclosure Agreements, with 3,229 unique pages and 2,160 entities to extract. We provide several state-of-the-art baseline systems from the KIE domain (Flair, BERT, RoBERTa, LayoutLM, LAMBERT), which show that our datasets pose a strong challenge to existing models. The best model achieved an 81.77% and an 83.57% F1-score on respectively the Kleister NDA and the Kleister Charity datasets. We share the datasets to encourage progress on more in-depth and complex information extraction tasks."
+  },
+  "2603.29832": {
+   "id": "2603.29832",
+   "title": "AutoFormBench: Benchmark Dataset for Automating Form Understanding",
+   "authors": [
+    "Gaurab Baral",
+    "Junxiu Zhou"
+   ],
+   "published": "2026-03-31",
+   "summary": "Automated processing of structured documents such as government forms, healthcare records, and enterprise invoices remains a persistent challenge due to the high degree of layout variability encountered in real-world settings. This paper introduces AutoFormBench, a benchmark dataset of 407 annotated real-world forms spanning government, healthcare, and enterprise domains, designed to train and evaluate form element detection models. We present a systematic comparison of classical OpenCV approaches and four YOLO architectures (YOLOv8, YOLOv11, YOLOv26-s, and YOLOv26-l) for localizing and classifying fillable form elements. specifically checkboxes, input lines, and text boxes across diverse PDF document types. YOLOv11 demonstrates consistently superior performance in both F1 score and Jaccard accuracy across all element classes and tolerance levels."
+  },
+  "2211.07730": {
+   "id": "2211.07730",
+   "title": "QueryForm: A Simple Zero-shot Form Entity Query Framework",
+   "authors": [
+    "Zifeng Wang",
+    "Zizhao Zhang",
+    "Jacob Devlin",
+    "Chen-Yu Lee",
+    "Guolong Su",
+    "Hao Zhang",
+    "Jennifer Dy",
+    "Vincent Perot",
+    "Tomas Pfister"
+   ],
+   "published": "2022-11-14",
+   "summary": "Zero-shot transfer learning for document understanding is a crucial yet under-investigated scenario to help reduce the high cost involved in annotating document entities. We present a novel query-based framework, QueryForm, that extracts entity values from form-like documents in a zero-shot fashion. QueryForm contains a dual prompting mechanism that composes both the document schema and a specific entity type into a query, which is used to prompt a Transformer model to perform a single entity extraction task. Furthermore, we propose to leverage large-scale query-entity pairs generated from form-like webpages with weak HTML annotations to pre-train QueryForm. By unifying pre-training and fine-tuning into the same query-based framework, QueryForm enables models to learn from structured documents containing various entities and layouts, leading to better generalization to target document types without the need for target-specific training data. QueryForm sets new state-of-the-art average F1 score on both the XFUND (+4.6%~10.1%) and the Payment (+3.2%~9.5%) zero-shot benchmark, with a smaller model size and no additional image input."
+  },
+  "2304.07957": {
+   "id": "2304.07957",
+   "title": "A Question-Answering Approach to Key Value Pair Extraction from Form-like Document Images",
+   "authors": [
+    "Kai Hu",
+    "Zhuoyuan Wu",
+    "Zhuoyao Zhong",
+    "Weihong Lin",
+    "Lei Sun",
+    "Qiang Huo"
+   ],
+   "published": "2023-04-17",
+   "summary": "In this paper, we present a new question-answering (QA) based key-value pair extraction approach, called KVPFormer, to robustly extracting key-value relationships between entities from form-like document images. Specifically, KVPFormer first identifies key entities from all entities in an image with a Transformer encoder, then takes these key entities as \\textbf{questions} and feeds them into a Transformer decoder to predict their corresponding \\textbf{answers} (i.e., value entities) in parallel. To achieve higher answer prediction accuracy, we propose a coarse-to-fine answer prediction approach further, which first extracts multiple answer candidates for each identified question in the coarse stage and then selects the most likely one among these candidates in the fine stage. In this way, the learning difficulty of answer prediction can be effectively reduced so that the prediction accuracy can be improved. Moreover, we introduce a spatial compatibility attention bias into the self-attention/cross-attention mechanism for \\Ours{} to better model the spatial interactions between entities. With these new techniques, our proposed \\Ours{} achieves state-of-the-art results on FUNSD and XFUND datasets, outperforming the previous best-performing method by 7.2\\% and 13.2\\% in F1 score, respectively."
+  },
+  "2305.13850": {
+   "id": "2305.13850",
+   "title": "Global Structure Knowledge-Guided Relation Extraction Method for Visually-Rich Document",
+   "authors": [
+    "Xiangnan Chen",
+    "Qian Xiao",
+    "Juncheng Li",
+    "Duo Dong",
+    "Jun Lin",
+    "Xiaozhong Liu",
+    "Siliang Tang"
+   ],
+   "published": "2023-05-23",
+   "summary": "Visual Relation Extraction (VRE) is a powerful means of discovering relationships between entities within visually-rich documents. Existing methods often focus on manipulating entity features to find pairwise relations, yet neglect the more fundamental structural information that links disparate entity pairs together. The absence of global structure information may make the model struggle to learn long-range relations and easily predict conflicted results. To alleviate such limitations, we propose a GlObal Structure knowledge-guided relation Extraction (GOSE) framework. GOSE initiates by generating preliminary relation predictions on entity pairs extracted from a scanned image of the document. Subsequently, global structural knowledge is captured from the preceding iterative predictions, which are then incorporated into the representations of the entities. This \"generate-capture-incorporate\" cycle is repeated multiple times, allowing entity representations and global structure knowledge to be mutually reinforced. Extensive experiments validate that GOSE not only outperforms existing methods in the standard fine-tuning setting but also reveals superior cross-lingual learning capabilities; indeed, even yields stronger data-efficient performance in the low-resource setting. The code for GOSE will be available at https://github.com/chenxn2020/GOSE."
+  },
+  "2107.04396": {
+   "id": "2107.04396",
+   "title": "Multi-Modal Association based Grouping for Form Structure Extraction",
+   "authors": [
+    "Milan Aggarwal",
+    "Mausoom Sarkar",
+    "Hiresh Gupta",
+    "Balaji Krishnamurthy"
+   ],
+   "published": "2021-07-09",
+   "summary": "Document structure extraction has been a widely researched area for decades. Recent work in this direction has been deep learning-based, mostly focusing on extracting structure using fully convolution NN through semantic segmentation. In this work, we present a novel multi-modal approach for form structure extraction. Given simple elements such as textruns and widgets, we extract higher-order structures such as TextBlocks, Text Fields, Choice Fields, and Choice Groups, which are essential for information collection in forms. To achieve this, we obtain a local image patch around each low-level element (reference) by identifying candidate elements closest to it. We process textual and spatial representation of candidates sequentially through a BiLSTM to obtain context-aware representations and fuse them with image patch features obtained by processing it through a CNN. Subsequently, the sequential decoder takes this fused feature vector to predict the association type between reference and candidates. These predicted associations are utilized to determine larger structures through connected components analysis. Experimental results show the effectiveness of our approach achieving a recall of 90.29%, 73.80%, 83.12%, and 52.72% for the above structures, respectively, outperforming semantic segmentation baselines significantly. We show the efficacy of our method through ablations, comparing it against using individual modalities. We also introduce our new rich human-annotated Forms Dataset."
+  },
+  "2405.17336": {
+   "id": "2405.17336",
+   "title": "XFormParser: A Simple and Effective Multimodal Multilingual Semi-structured Form Parser",
+   "authors": [
+    "Xianfu Cheng",
+    "Hang Zhang",
+    "Jian Yang",
+    "Xiang Li",
+    "Weixiao Zhou",
+    "Fei Liu",
+    "Kui Wu",
+    "Xiangyuan Guan",
+    "Tao Sun",
+    "Xianjie Wu",
+    "Tongliang Li",
+    "Zhoujun Li"
+   ],
+   "published": "2024-05-27",
+   "summary": "In the domain of Document AI, parsing semi-structured image form is a crucial Key Information Extraction (KIE) task. The advent of pre-trained multimodal models significantly empowers Document AI frameworks to extract key information from form documents in different formats such as PDF, Word, and images. Nonetheless, form parsing is still encumbered by notable challenges like subpar capabilities in multilingual parsing and diminished recall in industrial contexts in rich text and rich visuals. In this work, we introduce a simple but effective \\textbf{M}ultimodal and \\textbf{M}ultilingual semi-structured \\textbf{FORM} \\textbf{PARSER} (\\textbf{XFormParser}), which anchored on a comprehensive Transformer-based pre-trained language model and innovatively amalgamates semantic entity recognition (SER) and relation extraction (RE) into a unified framework. Combined with Bi-LSTM, the performance of multilingual parsing is significantly improved. Furthermore, we develop InDFormSFT, a pioneering supervised fine-tuning (SFT) industrial dataset that specifically addresses the parsing needs of forms in various industrial contexts. XFormParser has demonstrated its unparalleled effectiveness and robustness through rigorous testing on established benchmarks. Compared to existing state-of-the-art (SOTA) models, XFormParser notably achieves up to 1.79\\% F1 score improvement on RE tasks in language-specific settings. It also exhibits exceptional cross-task performance improvements in multilingual and zero-shot settings. The codes, datasets, and pre-trained models are publicly available at https://github.com/zhbuaa0/xformparser."
+  },
+  "2005.00642": {
+   "id": "2005.00642",
+   "title": "Spatial Dependency Parsing for Semi-Structured Document Information Extraction",
+   "authors": [
+    "Wonseok Hwang",
+    "Jinyeong Yim",
+    "Seunghyun Park",
+    "Sohee Yang",
+    "Minjoon Seo"
+   ],
+   "published": "2020-05-01",
+   "summary": "Information Extraction (IE) for semi-structured document images is often approached as a sequence tagging problem by classifying each recognized input token into one of the IOB (Inside, Outside, and Beginning) categories. However, such problem setup has two inherent limitations that (1) it cannot easily handle complex spatial relationships and (2) it is not suitable for highly structured information, which are nevertheless frequently observed in real-world document images. To tackle these issues, we first formulate the IE task as spatial dependency parsing problem that focuses on the relationship among text tokens in the documents. Under this setup, we then propose SPADE (SPAtial DEpendency parser) that models highly complex spatial relationships and an arbitrary number of information layers in the documents in an end-to-end manner. We evaluate it on various kinds of documents such as receipts, name cards, forms, and invoices, and show that it achieves a similar or better performance compared to strong baselines including BERT-based IOB taggger."
+  },
+  "2107.04419": {
+   "id": "2107.04419",
+   "title": "Form2Seq : A Framework for Higher-Order Form Structure Extraction",
+   "authors": [
+    "Milan Aggarwal",
+    "Hiresh Gupta",
+    "Mausoom Sarkar",
+    "Balaji Krishnamurthy"
+   ],
+   "published": "2021-07-09",
+   "summary": "Document structure extraction has been a widely researched area for decades with recent works performing it as a semantic segmentation task over document images using fully-convolution networks. Such methods are limited by image resolution due to which they fail to disambiguate structures in dense regions which appear commonly in forms. To mitigate this, we propose Form2Seq, a novel sequence-to-sequence (Seq2Seq) inspired framework for structure extraction using text, with a specific focus on forms, which leverages relative spatial arrangement of structures. We discuss two tasks; 1) Classification of low-level constituent elements (TextBlock and empty fillable Widget) into ten types such as field captions, list items, and others; 2) Grouping lower-level elements into higher-order constructs, such as Text Fields, ChoiceFields and ChoiceGroups, used as information collection mechanism in forms. To achieve this, we arrange the constituent elements linearly in natural reading order, feed their spatial and textual representations to Seq2Seq framework, which sequentially outputs prediction of each element depending on the final task. We modify Seq2Seq for grouping task and discuss improvements obtained through cascaded end-to-end training of two tasks versus training in isolation. Experimental results show the effectiveness of our text-based approach achieving an accuracy of 90% on classification task and an F1 of 75.82, 86.01, 61.63 on groups discussed above respectively, outperforming segmentation baselines. Further we show our framework achieves state of the results for table structure recognition on ICDAR 2013 dataset."
+  },
+  "2303.00289": {
+   "id": "2303.00289",
+   "title": "StrucTexTv2: Masked Visual-Textual Prediction for Document Image Pre-training",
+   "authors": [
+    "Yuechen Yu",
+    "Yulin Li",
+    "Chengquan Zhang",
+    "Xiaoqiang Zhang",
+    "Zengyuan Guo",
+    "Xiameng Qin",
+    "Kun Yao",
+    "Junyu Han",
+    "Errui Ding",
+    "Jingdong Wang"
+   ],
+   "published": "2023-03-01",
+   "summary": "In this paper, we present StrucTexTv2, an effective document image pre-training framework, by performing masked visual-textual prediction. It consists of two self-supervised pre-training tasks: masked image modeling and masked language modeling, based on text region-level image masking. The proposed method randomly masks some image regions according to the bounding box coordinates of text words. The objectives of our pre-training tasks are reconstructing the pixels of masked image regions and the corresponding masked tokens simultaneously. Hence the pre-trained encoder can capture more textual semantics in comparison to the masked image modeling that usually predicts the masked image patches. Compared to the masked multi-modal modeling methods for document image understanding that rely on both the image and text modalities, StrucTexTv2 models image-only input and potentially deals with more application scenarios free from OCR pre-processing. Extensive experiments on mainstream benchmarks of document image understanding demonstrate the effectiveness of StrucTexTv2. It achieves competitive or even new state-of-the-art performance in various downstream tasks such as image classification, layout analysis, table structure recognition, document OCR, and information extraction under the end-to-end scenario."
+  },
+  "2304.10759": {
+   "id": "2304.10759",
+   "title": "GeoLayoutLM: Geometric Pre-training for Visual Information Extraction",
+   "authors": [
+    "Chuwei Luo",
+    "Changxu Cheng",
+    "Qi Zheng",
+    "Cong Yao"
+   ],
+   "published": "2023-04-21",
+   "summary": "Visual information extraction (VIE) plays an important role in Document Intelligence. Generally, it is divided into two tasks: semantic entity recognition (SER) and relation extraction (RE). Recently, pre-trained models for documents have achieved substantial progress in VIE, particularly in SER. However, most of the existing models learn the geometric representation in an implicit way, which has been found insufficient for the RE task since geometric information is especially crucial for RE. Moreover, we reveal another factor that limits the performance of RE lies in the objective gap between the pre-training phase and the fine-tuning phase for RE. To tackle these issues, we propose in this paper a multi-modal framework, named GeoLayoutLM, for VIE. GeoLayoutLM explicitly models the geometric relations in pre-training, which we call geometric pre-training. Geometric pre-training is achieved by three specially designed geometry-related pre-training tasks. Additionally, novel relation heads, which are pre-trained by the geometric pre-training tasks and fine-tuned for RE, are elaborately designed to enrich and enhance the feature representation. According to extensive experiments on standard VIE benchmarks, GeoLayoutLM achieves highly competitive scores in the SER task and significantly outperforms the previous state-of-the-arts for RE (\\eg, the F1 score of RE on FUNSD is boosted from 80.35\\% to 89.45\\%). The code and models are publicly available at https://github.com/AlibabaResearch/AdvancedLiterateMachinery/tree/main/DocumentUnderstanding/GeoLayoutLM"
+  },
+  "2401.03472": {
+   "id": "2401.03472",
+   "title": "PEneo: Unifying Line Extraction, Line Grouping, and Entity Linking for End-to-end Document Pair Extraction",
+   "authors": [
+    "Zening Lin",
+    "Jiapeng Wang",
+    "Teng Li",
+    "Wenhui Liao",
+    "Dayi Huang",
+    "Longfei Xiong",
+    "Lianwen Jin"
+   ],
+   "published": "2024-01-07",
+   "summary": "Document pair extraction aims to identify key and value entities as well as their relationships from visually-rich documents. Most existing methods divide it into two separate tasks: semantic entity recognition (SER) and relation extraction (RE). However, simply concatenating SER and RE serially can lead to severe error propagation, and it fails to handle cases like multi-line entities in real scenarios. To address these issues, this paper introduces a novel framework, PEneo (Pair Extraction new decoder option), which performs document pair extraction in a unified pipeline, incorporating three concurrent sub-tasks: line extraction, line grouping, and entity linking. This approach alleviates the error accumulation problem and can handle the case of multi-line entities. Furthermore, to better evaluate the model's performance and to facilitate future research on pair extraction, we introduce RFUND, a re-annotated version of the commonly used FUNSD and XFUND datasets, to make them more accurate and cover realistic situations. Experiments on various benchmarks demonstrate PEneo's superiority over previous pipelines, boosting the performance by a large margin (e.g., 19.89%-22.91% F1 score on RFUND-EN) when combined with various backbones like LiLT and LayoutLMv3, showing its effectiveness and generality. Codes and the new annotations are available at https://github.com/ZeningLin/PEneo."
+  },
+  "2110.04282": {
+   "id": "2110.04282",
+   "title": "Field Extraction from Forms with Unlabeled Data",
+   "authors": [
+    "Mingfei Gao",
+    "Zeyuan Chen",
+    "Nikhil Naik",
+    "Kazuma Hashimoto",
+    "Caiming Xiong",
+    "Ran Xu"
+   ],
+   "published": "2021-10-08",
+   "summary": "We propose a novel framework to conduct field extraction from forms with unlabeled data. To bootstrap the training process, we develop a rule-based method for mining noisy pseudo-labels from unlabeled forms. Using the supervisory signal from the pseudo-labels, we extract a discriminative token representation from a transformer-based model by modeling the interaction between text in the form. To prevent the model from overfitting to label noise, we introduce a refinement module based on a progressive pseudo-label ensemble. Experimental results demonstrate the effectiveness of our framework."
+  },
+  "1909.04948": {
+   "id": "1909.04948",
+   "title": "BERTgrid: Contextualized Embedding for 2D Document Representation and Understanding",
+   "authors": [
+    "Timo I. Denk",
+    "Christian Reisswig"
+   ],
+   "published": "2019-09-11",
+   "summary": "For understanding generic documents, information like font sizes, column layout, and generally the positioning of words may carry semantic information that is crucial for solving a downstream document intelligence task. Our novel BERTgrid, which is based on Chargrid by Katti et al. (2018), represents a document as a grid of contextualized word piece embedding vectors, thereby making its spatial structure and semantics accessible to the processing neural network. The contextualized embedding vectors are retrieved from a BERT language model. We use BERTgrid in combination with a fully convolutional network on a semantic instance segmentation task for extracting fields from invoices. We demonstrate its performance on tabulated line item and document header field extraction."
+  },
+  "2305.02549": {
+   "id": "2305.02549",
+   "title": "FormNetV2: Multimodal Graph Contrastive Learning for Form Document Information Extraction",
+   "authors": [
+    "Chen-Yu Lee",
+    "Chun-Liang Li",
+    "Hao Zhang",
+    "Timothy Dozat",
+    "Vincent Perot",
+    "Guolong Su",
+    "Xiang Zhang",
+    "Kihyuk Sohn",
+    "Nikolai Glushnev",
+    "Renshen Wang",
+    "Joshua Ainslie",
+    "Shangbang Long",
+    "Siyang Qin",
+    "Yasuhisa Fujii",
+    "Nan Hua",
+    "Tomas Pfister"
+   ],
+   "published": "2023-05-04",
+   "summary": "The recent advent of self-supervised pre-training techniques has led to a surge in the use of multimodal learning in form document understanding. However, existing approaches that extend the mask language modeling to other modalities require careful multi-task tuning, complex reconstruction target designs, or additional pre-training data. In FormNetV2, we introduce a centralized multimodal graph contrastive learning strategy to unify self-supervised pre-training for all modalities in one loss. The graph contrastive objective maximizes the agreement of multimodal representations, providing a natural interplay for all modalities without special customization. In addition, we extract image features within the bounding box that joins a pair of tokens connected by a graph edge, capturing more targeted visual cues without loading a sophisticated and separately pre-trained image embedder. FormNetV2 establishes new state-of-the-art performance on FUNSD, CORD, SROIE and Payment benchmarks with a more compact model size."
+  },
+  "2203.13530": {
+   "id": "2203.13530",
+   "title": "Multimodal Pre-training Based on Graph Attention Network for Document Understanding",
+   "authors": [
+    "Zhenrong Zhang",
+    "Jiefeng Ma",
+    "Jun Du",
+    "Licheng Wang",
+    "Jianshu Zhang"
+   ],
+   "published": "2022-03-25",
+   "summary": "Document intelligence as a relatively new research topic supports many business applications. Its main task is to automatically read, understand, and analyze documents. However, due to the diversity of formats (invoices, reports, forms, etc.) and layouts in documents, it is difficult to make machines understand documents. In this paper, we present the GraphDoc, a multimodal graph attention-based model for various document understanding tasks. GraphDoc is pre-trained in a multimodal framework by utilizing text, layout, and image information simultaneously. In a document, a text block relies heavily on its surrounding contexts, accordingly we inject the graph structure into the attention mechanism to form a graph attention layer so that each input node can only attend to its neighborhoods. The input nodes of each graph attention layer are composed of textual, visual, and positional features from semantically meaningful regions in a document image. We do the multimodal feature fusion of each node by the gate fusion layer. The contextualization between each node is modeled by the graph attention layer. GraphDoc learns a generic representation from only 320k unlabeled documents via the Masked Sentence Modeling task. Extensive experimental results on the publicly available datasets show that GraphDoc achieves state-of-the-art performance, which demonstrates the effectiveness of our proposed method. The code is available at https://github.com/ZZR8066/GraphDoc."
+  },
+  "2409.19573": {
+   "id": "2409.19573",
+   "title": "See then Tell: Enhancing Key Information Extraction with Vision Grounding",
+   "authors": [
+    "Shuhang Liu",
+    "Zhenrong Zhang",
+    "Pengfei Hu",
+    "Jiefeng Ma",
+    "Jun Du",
+    "Qing Wang",
+    "Jianshu Zhang",
+    "Chenyu Liu"
+   ],
+   "published": "2024-09-29",
+   "summary": "In the digital era, the ability to understand visually rich documents that integrate text, complex layouts, and imagery is critical. Traditional Key Information Extraction (KIE) methods primarily rely on Optical Character Recognition (OCR), which often introduces significant latency, computational overhead, and errors. Current advanced image-to-text approaches, which bypass OCR, typically yield plain text outputs without corresponding vision grounding. In this paper, we introduce STNet (See then Tell Net), a novel end-to-end model designed to deliver precise answers with relevant vision grounding. Distinctively, STNet utilizes a unique <see> token to observe pertinent image areas, aided by a decoder that interprets physical coordinates linked to this token. Positioned at the outset of the answer text, the <see> token allows the model to first see-observing the regions of the image related to the input question-and then tell-providing articulated textual responses. To enhance the model's seeing capabilities, we collect extensive structured table recognition datasets. Leveraging the advanced text processing prowess of GPT-4, we develop the TVG (TableQA with Vision Grounding) dataset, which not only provides text-based Question Answering (QA) pairs but also incorporates precise vision grounding for these pairs. Our approach demonstrates substantial advancements in KIE performance, achieving state-of-the-art results on publicly available datasets such as CORD, SROIE, and DocVQA. The code will also be made publicly available."
+  },
+  "2608.20868": {
+   "id": "2608.20868",
+   "title": "Identify, Locate, Link: End-to-End Key-Value Extraction from Document Images",
+   "authors": [
+    "A. Said Gurbuz",
+    "Ahmed Nassar",
+    "Christoph Auer",
+    "Maksym Lysak",
+    "Lucas Morin",
+    "Matteo Omenetti",
+    "Tim Strohmeyer",
+    "Panagiotis Vagenas",
+    "Nikolaos Livathinos",
+    "Michele Dolfi",
+    "Peter Staar"
+   ],
+   "published": "2026-08-21",
+   "summary": "Document processing pipelines traditionally cascade optical character recognition (OCR) engines with downstream models for structured information extraction, leading to multi-stage error propagation. We fine-tune SmolDocling, a compact 256M-parameter vision-language model (VLM), to perform end-to-end key-value extraction directly from document images, jointly solving identification, localization, and association in a single pass without OCR preprocessing. We extend DocTags with specialized key, value, region, and link tags, enabling many-to-many relationships in a unified output sequence. To address data limitations, we design an augmentation pipeline combining synthetic form filling and graph-based crops that preserve complete key-value subgraphs. We further introduce a layout-aware evaluation framework extending text matching with spatial bounding box verification. On FUNSD, XFUND, and a large-scale private dataset, our model outperforms larger zero-shot VLM baselines under layout-aware evaluation, while being 27 times smaller than Qwen2.5-VL (7B) and over 5 times faster at inference. The model weights will be released publicly after publication."
+  },
+  "2401.09220": {
+   "id": "2401.09220",
+   "title": "UniVIE: A Unified Label Space Approach to Visual Information Extraction from Form-like Documents",
+   "authors": [
+    "Kai Hu",
+    "Jiawei Wang",
+    "Weihong Lin",
+    "Zhuoyao Zhong",
+    "Lei Sun",
+    "Qiang Huo"
+   ],
+   "published": "2024-01-17",
+   "summary": "Existing methods for Visual Information Extraction (VIE) from form-like documents typically fragment the process into separate subtasks, such as key information extraction, key-value pair extraction, and choice group extraction. However, these approaches often overlook the hierarchical structure of form documents, including hierarchical key-value pairs and hierarchical choice groups. To address these limitations, we present a new perspective, reframing VIE as a relation prediction problem and unifying labels of different tasks into a single label space. This unified approach allows for the definition of various relation types and effectively tackles hierarchical relationships in form-like documents. In line with this perspective, we present UniVIE, a unified model that addresses the VIE problem comprehensively. UniVIE functions using a coarse-to-fine strategy. It initially generates tree proposals through a tree proposal network, which are subsequently refined into hierarchical trees by a relation decoder module. To enhance the relation prediction capabilities of UniVIE, we incorporate two novel tree constraints into the relation decoder: a tree attention mask and a tree level embedding. Extensive experimental evaluations on both our in-house dataset HierForms and a publicly available dataset SIBR, substantiate that our method achieves state-of-the-art results, underscoring the effectiveness and potential of our unified approach in advancing the field of VIE."
+  },
+  "2004.07464": {
+   "id": "2004.07464",
+   "title": "PICK: Processing Key Information Extraction from Documents using Improved Graph Learning-Convolutional Networks",
+   "authors": [
+    "Wenwen Yu",
+    "Ning Lu",
+    "Xianbiao Qi",
+    "Ping Gong",
+    "Rong Xiao"
+   ],
+   "published": "2020-04-16",
+   "summary": "Computer vision with state-of-the-art deep learning models has achieved huge success in the field of Optical Character Recognition (OCR) including text detection and recognition tasks recently. However, Key Information Extraction (KIE) from documents as the downstream task of OCR, having a large number of use scenarios in real-world, remains a challenge because documents not only have textual features extracting from OCR systems but also have semantic visual features that are not fully exploited and play a critical role in KIE. Too little work has been devoted to efficiently make full use of both textual and visual features of the documents. In this paper, we introduce PICK, a framework that is effective and robust in handling complex documents layout for KIE by combining graph learning with graph convolution operation, yielding a richer semantic representation containing the textual and visual features and global layout without ambiguity. Extensive experiments on real-world datasets have been conducted to show that our method outperforms baselines methods by significant margins. Our code is available at https://github.com/wenwenyu/PICK-pytorch."
+  },
+  "1903.11279": {
+   "id": "1903.11279",
+   "title": "Graph Convolution for Multimodal Information Extraction from Visually Rich Documents",
+   "authors": [
+    "Xiaojing Liu",
+    "Feiyu Gao",
+    "Qiong Zhang",
+    "Huasha Zhao"
+   ],
+   "published": "2019-03-27",
+   "summary": "Visually rich documents (VRDs) are ubiquitous in daily business and life. Examples are purchase receipts, insurance policy documents, custom declaration forms and so on. In VRDs, visual and layout information is critical for document understanding, and texts in such documents cannot be serialized into the one-dimensional sequence without losing information. Classic information extraction models such as BiLSTM-CRF typically operate on text sequences and do not incorporate visual features. In this paper, we introduce a graph convolution based model to combine textual and visual information presented in VRDs. Graph embeddings are trained to summarize the context of a text segment in the document, and further combined with text embeddings for entity extraction. Extensive experiments have been conducted to show that our method outperforms BiLSTM-CRF baselines by significant margins, on two real-world datasets. Additionally, ablation studies are also performed to evaluate the effectiveness of each component of our model."
+  },
+  "2105.11672": {
+   "id": "2105.11672",
+   "title": "ViBERTgrid: A Jointly Trained Multi-Modal 2D Document Representation for Key Information Extraction from Documents",
+   "authors": [
+    "Weihong Lin",
+    "Qifang Gao",
+    "Lei Sun",
+    "Zhuoyao Zhong",
+    "Kai Hu",
+    "Qin Ren",
+    "Qiang Huo"
+   ],
+   "published": "2021-05-25",
+   "summary": "Recent grid-based document representations like BERTgrid allow the simultaneous encoding of the textual and layout information of a document in a 2D feature map so that state-of-the-art image segmentation and/or object detection models can be straightforwardly leveraged to extract key information from documents. However, such methods have not achieved comparable performance to state-of-the-art sequence- and graph-based methods such as LayoutLM and PICK yet. In this paper, we propose a new multi-modal backbone network by concatenating a BERTgrid to an intermediate layer of a CNN model, where the input of CNN is a document image and the BERTgrid is a grid of word embeddings, to generate a more powerful grid-based document representation, named ViBERTgrid. Unlike BERTgrid, the parameters of BERT and CNN in our multimodal backbone network are trained jointly. Our experimental results demonstrate that this joint training strategy improves significantly the representation ability of ViBERTgrid. Consequently, our ViBERTgrid-based key information extraction approach has achieved state-of-the-art performance on real-world datasets."
+  },
+  "2307.07929": {
+   "id": "2307.07929",
+   "title": "DocTr: Document Transformer for Structured Information Extraction in Documents",
+   "authors": [
+    "Haofu Liao",
+    "Aruni RoyChowdhury",
+    "Weijian Li",
+    "Ankan Bansal",
+    "Yuting Zhang",
+    "Zhuowen Tu",
+    "Ravi Kumar Satzoda",
+    "R. Manmatha",
+    "Vijay Mahadevan"
+   ],
+   "published": "2023-07-16",
+   "summary": "We present a new formulation for structured information extraction (SIE) from visually rich documents. It aims to address the limitations of existing IOB tagging or graph-based formulations, which are either overly reliant on the correct ordering of input text or struggle with decoding a complex graph. Instead, motivated by anchor-based object detectors in vision, we represent an entity as an anchor word and a bounding box, and represent entity linking as the association between anchor words. This is more robust to text ordering, and maintains a compact graph for entity linking. The formulation motivates us to introduce 1) a DOCument TRansformer (DocTr) that aims at detecting and associating entity bounding boxes in visually rich documents, and 2) a simple pre-training strategy that helps learn entity detection in the context of language. Evaluations on three SIE benchmarks show the effectiveness of the proposed formulation, and the overall approach outperforms existing solutions."
+  },
+  "2203.02378": {
+   "id": "2203.02378",
+   "title": "DiT: Self-supervised Pre-training for Document Image Transformer",
+   "authors": [
+    "Junlong Li",
+    "Yiheng Xu",
+    "Tengchao Lv",
+    "Lei Cui",
+    "Cha Zhang",
+    "Furu Wei"
+   ],
+   "published": "2022-03-04",
+   "summary": "Image Transformer has recently achieved significant progress for natural image understanding, either using supervised (ViT, DeiT, etc.) or self-supervised (BEiT, MAE, etc.) pre-training techniques. In this paper, we propose \\textbf{DiT}, a self-supervised pre-trained \\textbf{D}ocument \\textbf{I}mage \\textbf{T}ransformer model using large-scale unlabeled text images for Document AI tasks, which is essential since no supervised counterparts ever exist due to the lack of human-labeled document images. We leverage DiT as the backbone network in a variety of vision-based Document AI tasks, including document image classification, document layout analysis, table detection as well as text detection for OCR. Experiment results have illustrated that the self-supervised pre-trained DiT model achieves new state-of-the-art results on these downstream tasks, e.g. document image classification (91.11 $\\rightarrow$ 92.69), document layout analysis (91.0 $\\rightarrow$ 94.9), table detection (94.23 $\\rightarrow$ 96.55) and text detection for OCR (93.07 $\\rightarrow$ 94.29). The code and pre-trained models are publicly available at \\url{https://aka.ms/msdit}."
+  },
+  "2203.08411": {
+   "id": "2203.08411",
+   "title": "FormNet: Structural Encoding beyond Sequential Modeling in Form Document Information Extraction",
+   "authors": [
+    "Chen-Yu Lee",
+    "Chun-Liang Li",
+    "Timothy Dozat",
+    "Vincent Perot",
+    "Guolong Su",
+    "Nan Hua",
+    "Joshua Ainslie",
+    "Renshen Wang",
+    "Yasuhisa Fujii",
+    "Tomas Pfister"
+   ],
+   "published": "2022-03-16",
+   "summary": "Sequence modeling has demonstrated state-of-the-art performance on natural language and document understanding tasks. However, it is challenging to correctly serialize tokens in form-like documents in practice due to their variety of layout patterns. We propose FormNet, a structure-aware sequence model to mitigate the suboptimal serialization of forms. First, we design Rich Attention that leverages the spatial relationship between tokens in a form for more precise attention score calculation. Second, we construct Super-Tokens for each word by embedding representations from their neighboring tokens through graph convolutions. FormNet therefore explicitly recovers local syntactic information that may have been lost during serialization. In experiments, FormNet outperforms existing methods with a more compact model size and less pre-training data, establishing new state-of-the-art performance on CORD, FUNSD and Payment benchmarks."
+  },
+  "1903.12363": {
+   "id": "1903.12363",
+   "title": "CUTIE: Learning to Understand Documents with Convolutional Universal Text Information Extractor",
+   "authors": [
+    "Xiaohui Zhao",
+    "Endi Niu",
+    "Zhuo Wu",
+    "Xiaoguang Wang"
+   ],
+   "published": "2019-03-29",
+   "summary": "Extracting key information from documents, such as receipts or invoices, and preserving the interested texts to structured data is crucial in the document-intensive streamline processes of office automation in areas that includes but not limited to accounting, financial, and taxation areas. To avoid designing expert rules for each specific type of document, some published works attempt to tackle the problem by learning a model to explore the semantic context in text sequences based on the Named Entity Recognition (NER) method in the NLP field. In this paper, we propose to harness the effective information from both semantic meaning and spatial distribution of texts in documents. Specifically, our proposed model, Convolutional Universal Text Information Extractor (CUTIE), applies convolutional neural networks on gridded texts where texts are embedded as features with semantical connotations. We further explore the effect of employing different structures of convolutional neural network and propose a fast and portable structure. We demonstrate the effectiveness of the proposed method on a dataset with up to $4,484$ labelled receipts, without any pre-training or post-processing, achieving state of the art performance that is much better than the NER based methods in terms of either speed and accuracy. Experimental results also demonstrate that the proposed CUTIE model being able to achieve good performance with a much smaller amount of training data."
+  },
+  "1909.04469": {
+   "id": "1909.04469",
+   "title": "Chargrid-OCR: End-to-end Trainable Optical Character Recognition for Printed Documents using Instance Segmentation",
+   "authors": [
+    "Christian Reisswig",
+    "Anoop R Katti",
+    "Marco Spinaci",
+    "Johannes H\u00f6hne"
+   ],
+   "published": "2019-09-10",
+   "summary": "We present an end-to-end trainable approach for Optical Character Recognition (OCR) on printed documents. Specifically, we propose a model that predicts a) a two-dimensional character grid (\\emph{chargrid}) representation of a document image as a semantic segmentation task and b) character boxes for delineating character instances as an object detection task. For training the model, we build two large-scale datasets without resorting to any manual annotation - synthetic documents with clean labels and real documents with noisy labels. We demonstrate experimentally that our method, trained on the combination of these datasets, (i) outperforms previous state-of-the-art approaches in accuracy (ii) is easily parallelizable on GPU and is, therefore, significantly faster and (iii) is easy to train and adapt to a new domain."
+  },
+  "2009.04153": {
+   "id": "2009.04153",
+   "title": "One-shot Text Field Labeling using Attention and Belief Propagation for Structure Information Extraction",
+   "authors": [
+    "Mengli Cheng",
+    "Minghui Qiu",
+    "Xing Shi",
+    "Jun Huang",
+    "Wei Lin"
+   ],
+   "published": "2020-09-09",
+   "summary": "Structured information extraction from document images usually consists of three steps: text detection, text recognition, and text field labeling. While text detection and text recognition have been heavily studied and improved a lot in literature, text field labeling is less explored and still faces many challenges. Existing learning based methods for text labeling task usually require a large amount of labeled examples to train a specific model for each type of document. However, collecting large amounts of document images and labeling them is difficult and sometimes impossible due to privacy issues. Deploying separate models for each type of document also consumes a lot of resources. Facing these challenges, we explore one-shot learning for the text field labeling task. Existing one-shot learning methods for the task are mostly rule-based and have difficulty in labeling fields in crowded regions with few landmarks and fields consisting of multiple separate text regions. To alleviate these problems, we proposed a novel deep end-to-end trainable approach for one-shot text field labeling, which makes use of attention mechanism to transfer the layout information between document images. We further applied conditional random field on the transferred layout information for the refinement of field labeling. We collected and annotated a real-world one-shot field labeling dataset with a large variety of document types and conducted extensive experiments to examine the effectiveness of the proposed model. To stimulate research in this direction, the collected dataset and the one-shot model will be released1."
+  },
+  "2102.09550": {
+   "id": "2102.09550",
+   "title": "Going Full-TILT Boogie on Document Understanding with Text-Image-Layout Transformer",
+   "authors": [
+    "Rafa\u0142 Powalski",
+    "\u0141ukasz Borchmann",
+    "Dawid Jurkiewicz",
+    "Tomasz Dwojak",
+    "Micha\u0142 Pietruszka",
+    "Gabriela Pa\u0142ka"
+   ],
+   "published": "2021-02-18",
+   "summary": "We address the challenging problem of Natural Language Comprehension beyond plain-text documents by introducing the TILT neural network architecture which simultaneously learns layout information, visual features, and textual semantics. Contrary to previous approaches, we rely on a decoder capable of unifying a variety of problems involving natural language. The layout is represented as an attention bias and complemented with contextualized visual information, while the core of our model is a pretrained encoder-decoder Transformer. Our novel approach achieves state-of-the-art results in extracting information from documents and answering questions which demand layout understanding (DocVQA, CORD, SROIE). At the same time, we simplify the process by employing an end-to-end model."
+  },
+  "2102.06732": {
+   "id": "2102.06732",
+   "title": "Towards Robust Visual Information Extraction in Real World: New Dataset and Novel Solution",
+   "authors": [
+    "Jiapeng Wang",
+    "Chongyu Liu",
+    "Lianwen Jin",
+    "Guozhi Tang",
+    "Jiaxin Zhang",
+    "Shuaitao Zhang",
+    "Qianying Wang",
+    "Yaqiang Wu",
+    "Mingxiang Cai"
+   ],
+   "published": "2021-01-24",
+   "summary": "Visual information extraction (VIE) has attracted considerable attention recently owing to its various advanced applications such as document understanding, automatic marking and intelligent education. Most existing works decoupled this problem into several independent sub-tasks of text spotting (text detection and recognition) and information extraction, which completely ignored the high correlation among them during optimization. In this paper, we propose a robust visual information extraction system (VIES) towards real-world scenarios, which is a unified end-to-end trainable framework for simultaneous text detection, recognition and information extraction by taking a single document image as input and outputting the structured information. Specifically, the information extraction branch collects abundant visual and semantic representations from text spotting for multimodal feature fusion and conversely, provides higher-level semantic clues to contribute to the optimization of text spotting. Moreover, regarding the shortage of public benchmarks, we construct a fully-annotated dataset called EPHOIE (https://github.com/HCIILAB/EPHOIE), which is the first Chinese benchmark for both text spotting and visual information extraction. EPHOIE consists of 1,494 images of examination paper head with complex layouts and background, including a total of 15,771 Chinese handwritten or printed text instances. Compared with the state-of-the-art methods, our VIES shows significant superior performance on the EPHOIE dataset and achieves a 9.01% F-score gain on the widely used SROIE dataset under the end-to-end scenario."
+  },
+  "1812.07248": {
+   "id": "1812.07248",
+   "title": "Attend, Copy, Parse -- End-to-end information extraction from documents",
+   "authors": [
+    "Rasmus Berg Palm",
+    "Florian Laws",
+    "Ole Winther"
+   ],
+   "published": "2018-12-18",
+   "summary": "Document information extraction tasks performed by humans create data consisting of a PDF or document image input, and extracted string outputs. This end-to-end data is naturally consumed and produced when performing the task because it is valuable in and of itself. It is naturally available, at no additional cost. Unfortunately, state-of-the-art word classification methods for information extraction cannot use this data, instead requiring word-level labels which are expensive to create and consequently not available for many real life tasks. In this paper we propose the Attend, Copy, Parse architecture, a deep neural network model that can be trained directly on end-to-end data, bypassing the need for word-level labels. We evaluate the proposed architecture on a large diverse set of invoices, and outperform a state-of-the-art production system based on word classification. We believe our proposed architecture can be used on many real life information extraction tasks where word classification cannot be used due to a lack of the required word-level labels."
+  },
+  "1912.13318": {
+   "id": "1912.13318",
+   "title": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
+   "authors": [
+    "Yiheng Xu",
+    "Minghao Li",
+    "Lei Cui",
+    "Shaohan Huang",
+    "Furu Wei",
+    "Ming Zhou"
+   ],
+   "published": "2019-12-31",
+   "summary": "Pre-training techniques have been verified successfully in a variety of NLP tasks in recent years. Despite the widespread use of pre-training models for NLP applications, they almost exclusively focus on text-level manipulation, while neglecting layout and style information that is vital for document image understanding. In this paper, we propose the \\textbf{LayoutLM} to jointly model interactions between text and layout information across scanned document images, which is beneficial for a great number of real-world document image understanding tasks such as information extraction from scanned documents. Furthermore, we also leverage image features to incorporate words' visual information into LayoutLM. To the best of our knowledge, this is the first time that text and layout are jointly learned in a single framework for document-level pre-training. It achieves new state-of-the-art results in several downstream tasks, including form understanding (from 70.72 to 79.27), receipt understanding (from 94.02 to 95.24) and document image classification (from 93.07 to 94.42). The code and pre-trained LayoutLM models are publicly available at \\url{https://aka.ms/layoutlm}."
+  },
+  "2002.08087": {
+   "id": "2002.08087",
+   "title": "LAMBERT: Layout-Aware (Language) Modeling for information extraction",
+   "authors": [
+    "\u0141ukasz Garncarek",
+    "Rafa\u0142 Powalski",
+    "Tomasz Stanis\u0142awek",
+    "Bartosz Topolski",
+    "Piotr Halama",
+    "Micha\u0142 Turski",
+    "Filip Grali\u0144ski"
+   ],
+   "published": "2020-02-19",
+   "summary": "We introduce a simple new approach to the problem of understanding documents where non-trivial layout influences the local semantics. To this end, we modify the Transformer encoder architecture in a way that allows it to use layout features obtained from an OCR system, without the need to re-learn language semantics from scratch. We only augment the input of the model with the coordinates of token bounding boxes, avoiding, in this way, the use of raw images. This leads to a layout-aware language model which can then be fine-tuned on downstream tasks. The model is evaluated on an end-to-end information extraction task using four publicly available datasets: Kleister NDA, Kleister Charity, SROIE and CORD. We show that our model achieves superior performance on datasets consisting of visually rich documents, while also outperforming the baseline RoBERTa on documents with flat layout (NDA \\(F_{1}\\) increase from 78.50 to 80.42). Our solution ranked first on the public leaderboard for the Key Information Extraction from the SROIE dataset, improving the SOTA \\(F_{1}\\)-score from 97.81 to 98.17."
+  },
+  "2105.11210": {
+   "id": "2105.11210",
+   "title": "StructuralLM: Structural Pre-training for Form Understanding",
+   "authors": [
+    "Chenliang Li",
+    "Bin Bi",
+    "Ming Yan",
+    "Wei Wang",
+    "Songfang Huang",
+    "Fei Huang",
+    "Luo Si"
+   ],
+   "published": "2021-05-24",
+   "summary": "Large pre-trained language models achieve state-of-the-art results when fine-tuned on downstream NLP tasks. However, they almost exclusively focus on text-only representation, while neglecting cell-level layout information that is important for form image understanding. In this paper, we propose a new pre-training approach, StructuralLM, to jointly leverage cell and layout information from scanned documents. Specifically, we pre-train StructuralLM with two new designs to make the most of the interactions of cell and layout information: 1) each cell as a semantic unit; 2) classification of cell positions. The pre-trained StructuralLM achieves new state-of-the-art results in different types of downstream tasks, including form understanding (from 78.95 to 85.14), document visual question answering (from 72.59 to 83.94) and document image classification (from 94.43 to 96.08)."
+  },
+  "2109.13967": {
+   "id": "2109.13967",
+   "title": "One-shot Key Information Extraction from Document with Deep Partial Graph Matching",
+   "authors": [
+    "Minghong Yao",
+    "Zhiguang Liu",
+    "Liangwei Wang",
+    "Houqiang Li",
+    "Liansheng Zhuang"
+   ],
+   "published": "2021-09-26",
+   "summary": "Automating the Key Information Extraction (KIE) from documents improves efficiency, productivity, and security in many industrial scenarios such as rapid indexing and archiving. Many existing supervised learning methods for the KIE task need to feed a large number of labeled samples and learn separate models for different types of documents. However, collecting and labeling a large dataset is time-consuming and is not a user-friendly requirement for many cloud platforms. To overcome these challenges, we propose a deep end-to-end trainable network for one-shot KIE using partial graph matching. Contrary to previous methods that the learning of similarity and solving are optimized separately, our method enables the learning of the two processes in an end-to-end framework. Existing one-shot KIE methods are either template or simple attention-based learning approach that struggle to handle texts that are shifted beyond their desired positions caused by printers, as illustrated in Fig.1. To solve this problem, we add one-to-(at most)-one constraint such that we will find the globally optimized solution even if some texts are drifted. Further, we design a multimodal context ensemble block to boost the performance through fusing features of spatial, textual, and aspect representations. To promote research of KIE, we collected and annotated a one-shot document KIE dataset named DKIE with diverse types of images. The DKIE dataset consists of 2.5K document images captured by mobile phones in natural scenes, and it is the largest available one-shot KIE dataset up to now. The results of experiments on DKIE show that our method achieved state-of-the-art performance compared with recent one-shot and supervised learning approaches. The dataset and proposed one-shot KIE model will be released soo"
+  },
+  "2005.13118": {
+   "id": "2005.13118",
+   "title": "TRIE: End-to-End Text Reading and Information Extraction for Document Understanding",
+   "authors": [
+    "Peng Zhang",
+    "Yunlu Xu",
+    "Zhanzhan Cheng",
+    "Shiliang Pu",
+    "Jing Lu",
+    "Liang Qiao",
+    "Yi Niu",
+    "Fei Wu"
+   ],
+   "published": "2020-05-27",
+   "summary": "Since real-world ubiquitous documents (e.g., invoices, tickets, resumes and leaflets) contain rich information, automatic document image understanding has become a hot topic. Most existing works decouple the problem into two separate tasks, (1) text reading for detecting and recognizing texts in images and (2) information extraction for analyzing and extracting key elements from previously extracted plain text. However, they mainly focus on improving information extraction task, while neglecting the fact that text reading and information extraction are mutually correlated. In this paper, we propose a unified end-to-end text reading and information extraction network, where the two tasks can reinforce each other. Specifically, the multimodal visual and textual features of text reading are fused for information extraction and in turn, the semantics in information extraction contribute to the optimization of text reading. On three real-world datasets with diverse document images (from fixed layout to variable layout, from structured text to semi-structured text), our proposed method significantly outperforms the state-of-the-art methods in both efficiency and accuracy."
+  },
+  "2108.11591": {
+   "id": "2108.11591",
+   "title": "LayoutReader: Pre-training of Text and Layout for Reading Order Detection",
+   "authors": [
+    "Zilong Wang",
+    "Yiheng Xu",
+    "Lei Cui",
+    "Jingbo Shang",
+    "Furu Wei"
+   ],
+   "published": "2021-08-26",
+   "summary": "Reading order detection is the cornerstone to understanding visually-rich documents (e.g., receipts and forms). Unfortunately, no existing work took advantage of advanced deep learning models because it is too laborious to annotate a large enough dataset. We observe that the reading order of WORD documents is embedded in their XML metadata; meanwhile, it is easy to convert WORD documents to PDFs or images. Therefore, in an automated manner, we construct ReadingBank, a benchmark dataset that contains reading order, text, and layout information for 500,000 document images covering a wide spectrum of document types. This first-ever large-scale dataset unleashes the power of deep neural networks for reading order detection. Specifically, our proposed LayoutReader captures the text and layout information for reading order prediction using the seq2seq model. It performs almost perfectly in reading order detection and significantly improves both open-source and commercial OCR engines in ordering text lines in their results in our experiments. We will release the dataset and model at \\url{https://aka.ms/layoutreader}."
+  },
+  "2108.04539": {
+   "id": "2108.04539",
+   "title": "BROS: A Pre-trained Language Model Focusing on Text and Layout for Better Key Information Extraction from Documents",
+   "authors": [
+    "Teakgyu Hong",
+    "Donghyun Kim",
+    "Mingi Ji",
+    "Wonseok Hwang",
+    "Daehyun Nam",
+    "Sungrae Park"
+   ],
+   "published": "2021-08-10",
+   "summary": "Key information extraction (KIE) from document images requires understanding the contextual and spatial semantics of texts in two-dimensional (2D) space. Many recent studies try to solve the task by developing pre-trained language models focusing on combining visual features from document images with texts and their layout. On the other hand, this paper tackles the problem by going back to the basic: effective combination of text and layout. Specifically, we propose a pre-trained language model, named BROS (BERT Relying On Spatiality), that encodes relative positions of texts in 2D space and learns from unlabeled documents with area-masking strategy. With this optimized training scheme for understanding texts in 2D space, BROS shows comparable or better performance compared to previous methods on four KIE benchmarks (FUNSD, SROIE*, CORD, and SciTSR) without relying on visual features. This paper also reveals two real-world challenges in KIE tasks-(1) minimizing the error from incorrect text ordering and (2) efficient learning from fewer downstream examples-and demonstrates the superiority of BROS over previous methods. Code is available at https://github.com/clovaai/bros."
+  },
+  "2203.16618": {
+   "id": "2203.16618",
+   "title": "End-to-end Document Recognition and Understanding with Dessurt",
+   "authors": [
+    "Brian Davis",
+    "Bryan Morse",
+    "Bryan Price",
+    "Chris Tensmeyer",
+    "Curtis Wigington",
+    "Vlad Morariu"
+   ],
+   "published": "2022-03-30",
+   "summary": "We introduce Dessurt, a relatively simple document understanding transformer capable of being fine-tuned on a greater variety of document tasks than prior methods. It receives a document image and task string as input and generates arbitrary text autoregressively as output. Because Dessurt is an end-to-end architecture that performs text recognition in addition to the document understanding, it does not require an external recognition model as prior methods do. Dessurt is a more flexible model than prior methods and is able to handle a variety of document domains and tasks. We show that this model is effective at 9 different dataset-task combinations."
+  },
+  "2204.08387": {
+   "id": "2204.08387",
+   "title": "LayoutLMv3: Pre-training for Document AI with Unified Text and Image Masking",
+   "authors": [
+    "Yupan Huang",
+    "Tengchao Lv",
+    "Lei Cui",
+    "Yutong Lu",
+    "Furu Wei"
+   ],
+   "published": "2022-04-18",
+   "summary": "Self-supervised pre-training techniques have achieved remarkable progress in Document AI. Most multimodal pre-trained models use a masked language modeling objective to learn bidirectional representations on the text modality, but they differ in pre-training objectives for the image modality. This discrepancy adds difficulty to multimodal representation learning. In this paper, we propose \\textbf{LayoutLMv3} to pre-train multimodal Transformers for Document AI with unified text and image masking. Additionally, LayoutLMv3 is pre-trained with a word-patch alignment objective to learn cross-modal alignment by predicting whether the corresponding image patch of a text word is masked. The simple unified architecture and training objectives make LayoutLMv3 a general-purpose pre-trained model for both text-centric and image-centric Document AI tasks. Experimental results show that LayoutLMv3 achieves state-of-the-art performance not only in text-centric tasks, including form understanding, receipt understanding, and document visual question answering, but also in image-centric tasks such as document image classification and document layout analysis. The code and models are publicly available at \\url{https://aka.ms/layoutlmv3}."
+  },
+  "2210.03347": {
+   "id": "2210.03347",
+   "title": "Pix2Struct: Screenshot Parsing as Pretraining for Visual Language Understanding",
+   "authors": [
+    "Kenton Lee",
+    "Mandar Joshi",
+    "Iulia Turc",
+    "Hexiang Hu",
+    "Fangyu Liu",
+    "Julian Eisenschlos",
+    "Urvashi Khandelwal",
+    "Peter Shaw",
+    "Ming-Wei Chang",
+    "Kristina Toutanova"
+   ],
+   "published": "2022-10-07",
+   "summary": "Visually-situated language is ubiquitous -- sources range from textbooks with diagrams to web pages with images and tables, to mobile apps with buttons and forms. Perhaps due to this diversity, previous work has typically relied on domain-specific recipes with limited sharing of the underlying data, model architectures, and objectives. We present Pix2Struct, a pretrained image-to-text model for purely visual language understanding, which can be finetuned on tasks containing visually-situated language. Pix2Struct is pretrained by learning to parse masked screenshots of web pages into simplified HTML. The web, with its richness of visual elements cleanly reflected in the HTML structure, provides a large source of pretraining data well suited to the diversity of downstream tasks. Intuitively, this objective subsumes common pretraining signals such as OCR, language modeling, image captioning. In addition to the novel pretraining strategy, we introduce a variable-resolution input representation and a more flexible integration of language and vision inputs, where language prompts such as questions are rendered directly on top of the input image. For the first time, we show that a single pretrained model can achieve state-of-the-art results in six out of nine tasks across four domains: documents, illustrations, user interfaces, and natural images."
+  },
+  "2507.05595": {
+   "id": "2507.05595",
+   "title": "PaddleOCR 3.0 Technical Report",
+   "authors": [
+    "Cheng Cui",
+    "Ting Sun",
+    "Manhui Lin",
+    "Tingquan Gao",
+    "Yubo Zhang",
+    "Jiaxuan Liu",
+    "Xueqing Wang",
+    "Zelun Zhang",
+    "Changda Zhou",
+    "Hongen Liu",
+    "Yue Zhang",
+    "Wenyu Lv",
+    "Kui Huang",
+    "Yichao Zhang",
+    "Jing Zhang",
+    "Jun Zhang",
+    "Yi Liu",
+    "Dianhai Yu",
+    "Yanjun Ma"
+   ],
+   "published": "2025-07-08",
+   "summary": "This technical report introduces PaddleOCR 3.0, an Apache-licensed open-source toolkit for OCR and document parsing. To address the growing demand for document understanding in the era of large language models, PaddleOCR 3.0 presents three major solutions: (1) PP-OCRv5 for multilingual text recognition, (2) PP-StructureV3 for hierarchical document parsing, and (3) PP-ChatOCRv4 for key information extraction. Compared to mainstream vision-language models (VLMs), these models with fewer than 100 million parameters achieve competitive accuracy and efficiency, rivaling billion-parameter VLMs. In addition to offering a high-quality OCR model library, PaddleOCR 3.0 provides efficient tools for training, inference, and deployment, supports heterogeneous hardware acceleration, and enables developers to easily build intelligent document applications."
+  },
+  "2210.06155": {
+   "id": "2210.06155",
+   "title": "ERNIE-Layout: Layout Knowledge Enhanced Pre-training for Visually-rich Document Understanding",
+   "authors": [
+    "Qiming Peng",
+    "Yinxu Pan",
+    "Wenjin Wang",
+    "Bin Luo",
+    "Zhenyu Zhang",
+    "Zhengjie Huang",
+    "Teng Hu",
+    "Weichong Yin",
+    "Yongfeng Chen",
+    "Yin Zhang",
+    "Shikun Feng",
+    "Yu Sun",
+    "Hao Tian",
+    "Hua Wu",
+    "Haifeng Wang"
+   ],
+   "published": "2022-10-12",
+   "summary": "Recent years have witnessed the rise and success of pre-training techniques in visually-rich document understanding. However, most existing methods lack the systematic mining and utilization of layout-centered knowledge, leading to sub-optimal performances. In this paper, we propose ERNIE-Layout, a novel document pre-training solution with layout knowledge enhancement in the whole workflow, to learn better representations that combine the features from text, layout, and image. Specifically, we first rearrange input sequences in the serialization stage, and then present a correlative pre-training task, reading order prediction, to learn the proper reading order of documents. To improve the layout awareness of the model, we integrate a spatial-aware disentangled attention into the multi-modal transformer and a replaced regions prediction task into the pre-training phase. Experimental results show that ERNIE-Layout achieves superior performance on various downstream tasks, setting new state-of-the-art on key information extraction, document image classification, and document question answering datasets. The code and models are publicly available at http://github.com/PaddlePaddle/PaddleNLP/tree/develop/model_zoo/ernie-layout."
+  },
+  "2212.02623": {
+   "id": "2212.02623",
+   "title": "Unifying Vision, Text, and Layout for Universal Document Processing",
+   "authors": [
+    "Zineng Tang",
+    "Ziyi Yang",
+    "Guoxin Wang",
+    "Yuwei Fang",
+    "Yang Liu",
+    "Chenguang Zhu",
+    "Michael Zeng",
+    "Cha Zhang",
+    "Mohit Bansal"
+   ],
+   "published": "2022-12-05",
+   "summary": "We propose Universal Document Processing (UDOP), a foundation Document AI model which unifies text, image, and layout modalities together with varied task formats, including document understanding and generation. UDOP leverages the spatial correlation between textual content and document image to model image, text, and layout modalities with one uniform representation. With a novel Vision-Text-Layout Transformer, UDOP unifies pretraining and multi-domain downstream tasks into a prompt-based sequence generation scheme. UDOP is pretrained on both large-scale unlabeled document corpora using innovative self-supervised objectives and diverse labeled data. UDOP also learns to generate document images from text and layout modalities via masked image reconstruction. To the best of our knowledge, this is the first time in the field of document AI that one model simultaneously achieves high-quality neural document editing and content customization. Our method sets the state-of-the-art on 8 Document AI tasks, e.g., document understanding and QA, across diverse data domains like finance reports, academic papers, and websites. UDOP ranks first on the leaderboard of the Document Understanding Benchmark."
+  },
+  "2203.06947": {
+   "id": "2203.06947",
+   "title": "XYLayoutLM: Towards Layout-Aware Multimodal Networks For Visually-Rich Document Understanding",
+   "authors": [
+    "Zhangxuan Gu",
+    "Changhua Meng",
+    "Ke Wang",
+    "Jun Lan",
+    "Weiqiang Wang",
+    "Ming Gu",
+    "Liqing Zhang"
+   ],
+   "published": "2022-03-14",
+   "summary": "Recently, various multimodal networks for Visually-Rich Document Understanding(VRDU) have been proposed, showing the promotion of transformers by integrating visual and layout information with the text embeddings. However, most existing approaches utilize the position embeddings to incorporate the sequence information, neglecting the noisy improper reading order obtained by OCR tools. In this paper, we propose a robust layout-aware multimodal network named XYLayoutLM to capture and leverage rich layout information from proper reading orders produced by our Augmented XY Cut. Moreover, a Dilated Conditional Position Encoding module is proposed to deal with the input sequence of variable lengths, and it additionally extracts local layout information from both textual and visual modalities while generating position embeddings. Experiment results show that our XYLayoutLM achieves competitive results on document understanding tasks."
+  },
+  "2012.14740": {
+   "id": "2012.14740",
+   "title": "LayoutLMv2: Multi-modal Pre-training for Visually-Rich Document Understanding",
+   "authors": [
+    "Yang Xu",
+    "Yiheng Xu",
+    "Tengchao Lv",
+    "Lei Cui",
+    "Furu Wei",
+    "Guoxin Wang",
+    "Yijuan Lu",
+    "Dinei Florencio",
+    "Cha Zhang",
+    "Wanxiang Che",
+    "Min Zhang",
+    "Lidong Zhou"
+   ],
+   "published": "2020-12-29",
+   "summary": "Pre-training of text and layout has proved effective in a variety of visually-rich document understanding tasks due to its effective model architecture and the advantage of large-scale unlabeled scanned/digital-born documents. We propose LayoutLMv2 architecture with new pre-training tasks to model the interaction among text, layout, and image in a single multi-modal framework. Specifically, with a two-stream multi-modal Transformer encoder, LayoutLMv2 uses not only the existing masked visual-language modeling task but also the new text-image alignment and text-image matching tasks, which make it better capture the cross-modality interaction in the pre-training stage. Meanwhile, it also integrates a spatial-aware self-attention mechanism into the Transformer architecture so that the model can fully understand the relative positional relationship among different text blocks. Experiment results show that LayoutLMv2 outperforms LayoutLM by a large margin and achieves new state-of-the-art results on a wide variety of downstream visually-rich document understanding tasks, including FUNSD (0.7895 $\\to$ 0.8420), CORD (0.9493 $\\to$ 0.9601), SROIE (0.9524 $\\to$ 0.9781), Kleister-NDA (0.8340 $\\to$ 0.8520), RVL-CDIP (0.9443 $\\to$ 0.9564), and DocVQA (0.7295 $\\to$ 0.8672). We made our model and code publicly available at \\url{https://aka.ms/layoutlmv2}."
+  },
+  "2106.11539": {
+   "id": "2106.11539",
+   "title": "DocFormer: End-to-End Transformer for Document Understanding",
+   "authors": [
+    "Srikar Appalaraju",
+    "Bhavan Jasani",
+    "Bhargava Urala Kota",
+    "Yusheng Xie",
+    "R. Manmatha"
+   ],
+   "published": "2021-06-22",
+   "summary": "We present DocFormer -- a multi-modal transformer based architecture for the task of Visual Document Understanding (VDU). VDU is a challenging problem which aims to understand documents in their varied formats (forms, receipts etc.) and layouts. In addition, DocFormer is pre-trained in an unsupervised fashion using carefully designed tasks which encourage multi-modal interaction. DocFormer uses text, vision and spatial features and combines them using a novel multi-modal self-attention layer. DocFormer also shares learned spatial embeddings across modalities which makes it easy for the model to correlate text to visual tokens and vice versa. DocFormer is evaluated on 4 different datasets each with strong baselines. DocFormer achieves state-of-the-art results on all of them, sometimes beating models 4x its size (in no. of parameters)."
+  },
+  "2507.18264": {
+   "id": "2507.18264",
+   "title": "Zero-shot OCR Accuracy of Low-Resourced Languages: A Comparative Analysis on Sinhala and Tamil",
+   "authors": [
+    "Nevidu Jayatilleke",
+    "Nisansa de Silva"
+   ],
+   "published": "2025-07-24",
+   "summary": "Solving the problem of Optical Character Recognition (OCR) on printed text for Latin and its derivative scripts can now be considered settled due to the volumes of research done on English and other High-Resourced Languages (HRL). However, for Low-Resourced Languages (LRL) that use unique scripts, it remains an open problem. This study presents a comparative analysis of the zero-shot performance of six distinct OCR engines on two LRLs: Sinhala and Tamil. The selected engines include both commercial and open-source systems, aiming to evaluate the strengths of each category. The Cloud Vision API, Surya, Document AI, and Tesseract were evaluated for both Sinhala and Tamil, while Subasa OCR and EasyOCR were examined for only one language due to their limitations. The performance of these systems was rigorously analysed using five measurement techniques to assess accuracy at both the character and word levels. According to the findings, Surya delivered the best performance for Sinhala across all metrics, with a WER of 2.61%. Conversely, Document AI excelled across all metrics for Tamil, highlighted by a very low CER of 0.78%. In addition to the above analysis, we also introduce a novel synthetic Tamil OCR benchmarking dataset."
+  },
+  "2306.01733": {
+   "id": "2306.01733",
+   "title": "DocFormerv2: Local Features for Document Understanding",
+   "authors": [
+    "Srikar Appalaraju",
+    "Peng Tang",
+    "Qi Dong",
+    "Nishant Sankaran",
+    "Yichu Zhou",
+    "R. Manmatha"
+   ],
+   "published": "2023-06-02",
+   "summary": "We propose DocFormerv2, a multi-modal transformer for Visual Document Understanding (VDU). The VDU domain entails understanding documents (beyond mere OCR predictions) e.g., extracting information from a form, VQA for documents and other tasks. VDU is challenging as it needs a model to make sense of multiple modalities (visual, language and spatial) to make a prediction. Our approach, termed DocFormerv2 is an encoder-decoder transformer which takes as input - vision, language and spatial features. DocFormerv2 is pre-trained with unsupervised tasks employed asymmetrically i.e., two novel document tasks on encoder and one on the auto-regressive decoder. The unsupervised tasks have been carefully designed to ensure that the pre-training encourages local-feature alignment between multiple modalities. DocFormerv2 when evaluated on nine datasets shows state-of-the-art performance over strong baselines e.g. TabFact (4.3%), InfoVQA (1.4%), FUNSD (1%). Furthermore, to show generalization capabilities, on three VQA tasks involving scene-text, Doc- Formerv2 outperforms previous comparably-sized models and even does better than much larger models (such as GIT2, PaLi and Flamingo) on some tasks. Extensive ablations show that due to its pre-training, DocFormerv2 understands multiple modalities better than prior-art in VDU."
+  },
+  "2206.03001": {
+   "id": "2206.03001",
+   "title": "PP-OCRv3: More Attempts for the Improvement of Ultra Lightweight OCR System",
+   "authors": [
+    "Chenxia Li",
+    "Weiwei Liu",
+    "Ruoyu Guo",
+    "Xiaoting Yin",
+    "Kaitao Jiang",
+    "Yongkun Du",
+    "Yuning Du",
+    "Lingfeng Zhu",
+    "Baohua Lai",
+    "Xiaoguang Hu",
+    "Dianhai Yu",
+    "Yanjun Ma"
+   ],
+   "published": "2022-06-07",
+   "summary": "Optical character recognition (OCR) technology has been widely used in various scenes, as shown in Figure 1. Designing a practical OCR system is still a meaningful but challenging task. In previous work, considering the efficiency and accuracy, we proposed a practical ultra lightweight OCR system (PP-OCR), and an optimized version PP-OCRv2. In order to further improve the performance of PP-OCRv2, a more robust OCR system PP-OCRv3 is proposed in this paper. PP-OCRv3 upgrades the text detection model and text recognition model in 9 aspects based on PP-OCRv2. For text detector, we introduce a PAN module with large receptive field named LK-PAN, a FPN module with residual attention mechanism named RSE-FPN, and DML distillation strategy. For text recognizer, the base model is replaced from CRNN to SVTR, and we introduce lightweight text recognition network SVTR LCNet, guided training of CTC by attention, data augmentation strategy TextConAug, better pre-trained model by self-supervised TextRotNet, UDML, and UIM to accelerate the model and improve the effect. Experiments on real data show that the hmean of PP-OCRv3 is 5% higher than PP-OCRv2 under comparable inference speed. All the above mentioned models are open-sourced and the code is available in the GitHub repository PaddleOCR which is powered by PaddlePaddle."
+  },
+  "2111.15664": {
+   "id": "2111.15664",
+   "title": "OCR-free Document Understanding Transformer",
+   "authors": [
+    "Geewook Kim",
+    "Teakgyu Hong",
+    "Moonbin Yim",
+    "Jeongyeon Nam",
+    "Jinyoung Park",
+    "Jinyeong Yim",
+    "Wonseok Hwang",
+    "Sangdoo Yun",
+    "Dongyoon Han",
+    "Seunghyun Park"
+   ],
+   "published": "2021-11-30",
+   "summary": "Understanding document images (e.g., invoices) is a core but challenging task since it requires complex functions such as reading text and a holistic understanding of the document. Current Visual Document Understanding (VDU) methods outsource the task of reading text to off-the-shelf Optical Character Recognition (OCR) engines and focus on the understanding task with the OCR outputs. Although such OCR-based approaches have shown promising performance, they suffer from 1) high computational costs for using OCR; 2) inflexibility of OCR models on languages or types of document; 3) OCR error propagation to the subsequent process. To address these issues, in this paper, we introduce a novel OCR-free VDU model named Donut, which stands for Document understanding transformer. As the first step in OCR-free VDU research, we propose a simple architecture (i.e., Transformer) with a pre-training objective (i.e., cross-entropy loss). Donut is conceptually simple yet effective. Through extensive experiments and analyses, we show a simple OCR-free VDU model, Donut, achieves state-of-the-art performances on various VDU tasks in terms of both speed and accuracy. In addition, we offer a synthetic data generator that helps the model pre-training to be flexible in various languages and domains. The code, trained model and synthetic data are available at https://github.com/clovaai/donut."
+  },
+  "2108.02923": {
+   "id": "2108.02923",
+   "title": "StrucTexT: Structured Text Understanding with Multi-Modal Transformers",
+   "authors": [
+    "Yulin Li",
+    "Yuxi Qian",
+    "Yuchen Yu",
+    "Xiameng Qin",
+    "Chengquan Zhang",
+    "Yan Liu",
+    "Kun Yao",
+    "Junyu Han",
+    "Jingtuo Liu",
+    "Errui Ding"
+   ],
+   "published": "2021-08-06",
+   "summary": "Structured text understanding on Visually Rich Documents (VRDs) is a crucial part of Document Intelligence. Due to the complexity of content and layout in VRDs, structured text understanding has been a challenging task. Most existing studies decoupled this problem into two sub-tasks: entity labeling and entity linking, which require an entire understanding of the context of documents at both token and segment levels. However, little work has been concerned with the solutions that efficiently extract the structured data from different levels. This paper proposes a unified framework named StrucTexT, which is flexible and effective for handling both sub-tasks. Specifically, based on the transformer, we introduce a segment-token aligned encoder to deal with the entity labeling and entity linking tasks at different levels of granularity. Moreover, we design a novel pre-training strategy with three self-supervised tasks to learn a richer representation. StrucTexT uses the existing Masked Visual Language Modeling task and the new Sentence Length Prediction and Paired Boxes Direction tasks to incorporate the multi-modal information across text, image, and layout. We evaluate our method for structured text understanding at segment-level and token-level and show it outperforms the state-of-the-art counterparts with significantly superior performance on the FUNSD, SROIE, and EPHOIE datasets."
+  },
+  "1806.10866": {
+   "id": "1806.10866",
+   "title": "Exploring Architectures for CNN-Based Word Spotting",
+   "authors": [
+    "Eugen Rusakov",
+    "Sebastian Sudholt",
+    "Fabian Wolf",
+    "Gernot A. Fink"
+   ],
+   "published": "2018-06-28",
+   "summary": "The goal in word spotting is to retrieve parts of document images which are relevant with respect to a certain user-defined query. The recent past has seen attribute-based Convolutional Neural Networks take over this field of research. As is common for other fields of computer vision, the CNNs used for this task are already considerably deep. The question that arises, however, is: How complex does a CNN have to be for word spotting? Are increasingly deeper models giving increasingly better results or does performance behave asymptotically for these architectures? On the other hand, can similar results be obtained with a much smaller CNN? The goal of this paper is to give an answer to these questions. Therefore, the recently successful TPP-PHOCNet will be compared to a Residual Network, a Densely Connected Convolutional Network and a LeNet architecture empirically. As will be seen in the evaluation, a complex model can be beneficial for word spotting on harder tasks such as the IAM Offline Database but gives no advantage for easier benchmarks such as the George Washington Database."
+  },
+  "2604.12978": {
+   "id": "2604.12978",
+   "title": "GlotOCR Bench: OCR Models Still Struggle Beyond a Handful of Unicode Scripts",
+   "authors": [
+    "Amir Hossein Kargaran",
+    "Nafiseh Nikeghbal",
+    "Jana Diesner",
+    "Fran\u00e7ois Yvon",
+    "Hinrich Sch\u00fctze"
+   ],
+   "published": "2026-04-14",
+   "summary": "Optical character recognition (OCR) has advanced rapidly with the rise of vision-language models, yet evaluation has remained concentrated on a small cluster of high- and mid-resource scripts. We introduce GlotOCR Bench, a comprehensive benchmark evaluating OCR generalization across 100+ Unicode scripts. Our benchmark comprises clean and degraded image variants rendered from real multilingual texts. Images are rendered using fonts from the Google Fonts repository, shaped with HarfBuzz and rasterized with FreeType, supporting both LTR and RTL scripts. Samples of rendered images were manually reviewed to verify correct rendering across all scripts. We evaluate a broad suite of open-weight and proprietary vision-language models and find that most perform well on fewer than ten scripts, and even the strongest frontier models fail to generalize beyond thirty scripts. Performance broadly tracks script-level pretraining coverage, suggesting that current OCR systems rely on language model pretraining as much as on visual recognition. Models confronted with unfamiliar scripts either produce random noise or hallucinate characters from similar scripts they already know. We release the benchmark and pipeline for reproducibility. Pipeline Code: https://github.com/cisnlp/glotocr-bench, Benchmark: https://hf.co/datasets/cis-lmu/glotocr-bench."
+  },
+  "1707.01294": {
+   "id": "1707.01294",
+   "title": "R-PHOC: Segmentation-Free Word Spotting using CNN",
+   "authors": [
+    "Suman Ghosh",
+    "Ernest Valveny"
+   ],
+   "published": "2017-07-05",
+   "summary": "This paper proposes a region based convolutional neural network for segmentation-free word spotting. Our net- work takes as input an image and a set of word candidate bound- ing boxes and embeds all bounding boxes into an embedding space, where word spotting can be casted as a simple nearest neighbour search between the query representation and each of the candidate bounding boxes. We make use of PHOC embedding as it has previously achieved significant success in segmentation- based word spotting. Word candidates are generated using a simple procedure based on grouping connected components using some spatial constraints. Experiments show that R-PHOC which operates on images directly can improve the current state-of- the-art in the standard GW dataset and performs as good as PHOCNET in some cases designed for segmentation based word spotting."
+  },
+  "1604.00187": {
+   "id": "1604.00187",
+   "title": "PHOCNet: A Deep Convolutional Neural Network for Word Spotting in Handwritten Documents",
+   "authors": [
+    "Sebastian Sudholt",
+    "Gernot A. Fink"
+   ],
+   "published": "2016-04-01",
+   "summary": "In recent years, deep convolutional neural networks have achieved state of the art performance in various computer vision task such as classification, detection or segmentation. Due to their outstanding performance, CNNs are more and more used in the field of document image analysis as well. In this work, we present a CNN architecture that is trained with the recently proposed PHOC representation. We show empirically that our CNN architecture is able to outperform state of the art results for various word spotting benchmarks while exhibiting short training and test times."
+  },
+  "2511.04479": {
+   "id": "2511.04479",
+   "title": "ThaiOCRBench: A Task-Diverse Benchmark for Vision-Language Understanding in Thai",
+   "authors": [
+    "Surapon Nonesung",
+    "Teetouch Jaknamon",
+    "Sirinya Chaiophat",
+    "Natapong Nitarach",
+    "Chanakan Wittayasakpan",
+    "Warit Sirichotedumrong",
+    "Adisai Na-Thalang",
+    "Kunat Pipatanakul"
+   ],
+   "published": "2025-11-06",
+   "summary": "We present ThaiOCRBench, the first comprehensive benchmark for evaluating vision-language models (VLMs) on Thai text-rich visual understanding tasks. Despite recent progress in multimodal modeling, existing benchmarks predominantly focus on high-resource languages, leaving Thai underrepresented, especially in tasks requiring document structure understanding. ThaiOCRBench addresses this gap by offering a diverse, human-annotated dataset comprising 2,808 samples across 13 task categories. We evaluate a wide range of state-of-the-art VLMs in a zero-shot setting, spanning both proprietary and open-source systems. Results show a significant performance gap, with proprietary models (e.g., Gemini 2.5 Pro) outperforming open-source counterparts. Notably, fine-grained text recognition and handwritten content extraction exhibit the steepest performance drops among open-source models. Through detailed error analysis, we identify key challenges such as language bias, structural mismatch, and hallucinated content. ThaiOCRBench provides a standardized framework for assessing VLMs in low-resource, script-complex settings, and provides actionable insights for improving Thai-language document understanding."
+  },
+  "2304.13530": {
+   "id": "2304.13530",
+   "title": "Key-value information extraction from full handwritten pages",
+   "authors": [
+    "Sol\u00e8ne Tarride",
+    "M\u00e9lodie Boillet",
+    "Christopher Kermorvant"
+   ],
+   "published": "2023-04-26",
+   "summary": "We propose a Transformer-based approach for information extraction from digitized handwritten documents. Our approach combines, in a single model, the different steps that were so far performed by separate models: feature extraction, handwriting recognition and named entity recognition. We compare this integrated approach with traditional two-stage methods that perform handwriting recognition before named entity recognition, and present results at different levels: line, paragraph, and page. Our experiments show that attention-based models are especially interesting when applied on full pages, as they do not require any prior segmentation step. Finally, we show that they are able to learn from key-value annotations: a list of important words with their corresponding named entities. We compare our models to state-of-the-art methods on three public databases (IAM, ESPOSALLES, and POPP) and outperform previous performances on all three datasets."
+  },
+  "2305.04460": {
+   "id": "2305.04460",
+   "title": "Language Independent Neuro-Symbolic Semantic Parsing for Form Understanding",
+   "authors": [
+    "Bhanu Prakash Voutharoja",
+    "Lizhen Qu",
+    "Fatemeh Shiri"
+   ],
+   "published": "2023-05-08",
+   "summary": "Recent works on form understanding mostly employ multimodal transformers or large-scale pre-trained language models. These models need ample data for pre-training. In contrast, humans can usually identify key-value pairings from a form only by looking at layouts, even if they don't comprehend the language used. No prior research has been conducted to investigate how helpful layout information alone is for form understanding. Hence, we propose a unique entity-relation graph parsing method for scanned forms called LAGNN, a language-independent Graph Neural Network model. Our model parses a form into a word-relation graph in order to identify entities and relations jointly and reduce the time complexity of inference. This graph is then transformed by deterministic rules into a fully connected entity-relation graph. Our model simply takes into account relative spacing between bounding boxes from layout information to facilitate easy transfer across languages. To further improve the performance of LAGNN, and achieve isomorphism between entity-relation graphs and word-relation graphs, we use integer linear programming (ILP) based inference. Code is publicly available at https://github.com/Bhanu068/LAGNN"
+  },
+  "2010.11685": {
+   "id": "2010.11685",
+   "title": "DocStruct: A Multimodal Method to Extract Hierarchy Structure in Document for General Form Understanding",
+   "authors": [
+    "Zilong Wang",
+    "Mingjie Zhan",
+    "Xuebo Liu",
+    "Ding Liang"
+   ],
+   "published": "2020-10-15",
+   "summary": "Form understanding depends on both textual contents and organizational structure. Although modern OCR performs well, it is still challenging to realize general form understanding because forms are commonly used and of various formats. The table detection and handcrafted features in previous works cannot apply to all forms because of their requirements on formats. Therefore, we concentrate on the most elementary components, the key-value pairs, and adopt multimodal methods to extract features. We consider the form structure as a tree-like or graph-like hierarchy of text fragments. The parent-child relation corresponds to the key-value pairs in forms. We utilize the state-of-the-art models and design targeted extraction modules to extract multimodal features from semantic contents, layout information, and visual images. A hybrid fusion method of concatenation and feature shifting is designed to fuse the heterogeneous features and provide an informative joint representation. We adopt an asymmetric algorithm and negative sampling in our model as well. We validate our method on two benchmarks, MedForm and FUNSD, and extensive experiments demonstrate the effectiveness of our method."
+  },
+  "2410.01160": {
+   "id": "2410.01160",
+   "title": "GraphRevisedIE: Multimodal Information Extraction with Graph-Revised Network",
+   "authors": [
+    "Panfeng Cao",
+    "Jian Wu"
+   ],
+   "published": "2024-10-02",
+   "summary": "Key information extraction (KIE) from visually rich documents (VRD) has been a challenging task in document intelligence because of not only the complicated and diverse layouts of VRD that make the model hard to generalize but also the lack of methods to exploit the multimodal features in VRD. In this paper, we propose a light-weight model named GraphRevisedIE that effectively embeds multimodal features such as textual, visual, and layout features from VRD and leverages graph revision and graph convolution to enrich the multimodal embedding with global context. Extensive experiments on multiple real-world datasets show that GraphRevisedIE generalizes to documents of varied layouts and achieves comparable or better performance compared to previous KIE methods. We also publish a business license dataset that contains both real-life and synthesized documents to facilitate research of document KIE."
+  }
+ },
+ "results": [
+  [
+   "2408.01287",
+   "ding_vrd_content_understanding_survey",
+   "01_surveys",
+   "ok",
+   1329331
+  ],
+  [
+   "2111.08609",
+   "cui_document_ai_survey",
+   "01_surveys",
+   "ok",
+   1134852
+  ],
+  [
+   "2507.09861",
+   "ding_mllm_vrdu_survey",
+   "01_surveys",
+   "ok",
+   993703
+  ],
+  [
+   "1905.13538",
+   "funsd",
+   "02_datasets_benchmarks",
+   "ok",
+   245478
+  ],
+  [
+   "2010.05322",
+   "revising_funsd_kv_detection",
+   "02_datasets_benchmarks",
+   "ok",
+   715120
+  ],
+  [
+   "2104.08836",
+   "layoutxlm_xfund",
+   "02_datasets_benchmarks",
+   "ok",
+   5699774
+  ],
+  [
+   "2103.10213",
+   "sroie_icdar2019",
+   "02_datasets_benchmarks",
+   "ok",
+   2940111
+  ],
+  [
+   "2105.05796",
+   "kleister",
+   "02_datasets_benchmarks",
+   "ok",
+   1953981
+  ],
+  [
+   "2302.05658",
+   "docile",
+   "02_datasets_benchmarks",
+   "ok",
+   1120894
+  ],
+  [
+   "2211.15421",
+   "vrdu_benchmark_unseen_templates",
+   "02_datasets_benchmarks",
+   "ok",
+   2844350
+  ],
+  [
+   "2405.00505",
+   "kvp10k",
+   "02_datasets_benchmarks",
+   "ok",
+   1803979
+  ],
+  [
+   "2304.13606",
+   "simara_kv_full_pages",
+   "02_datasets_benchmarks",
+   "ok",
+   1958356
+  ],
+  [
+   "2509.16506",
+   "commonforms_field_detection",
+   "02_datasets_benchmarks",
+   "ok",
+   16161017
+  ],
+  [
+   "2603.29832",
+   "autoformbench",
+   "02_datasets_benchmarks",
+   "ok",
+   652843
+  ],
+  [
+   "2607.05614",
+   "bafco_bangla_forms",
+   "02_datasets_benchmarks",
+   "ok",
+   24804927
+  ],
+  [
+   "2307.10551",
+   "ppn_clex_dataset",
+   "02_datasets_benchmarks",
+   "ok",
+   1621821
+  ],
+  [
+   "2206.01062",
+   "doclaynet",
+   "02_datasets_benchmarks",
+   "ok",
+   4310680
+  ],
+  [
+   "2007.00398",
+   "docvqa",
+   "02_datasets_benchmarks",
+   "ok",
+   12489241
+  ],
+  [
+   "1909.02576",
+   "davis_template_free_form_parsing_NAF",
+   "03_visual_language_agnostic",
+   "ok",
+   4599795
+  ],
+  [
+   "2105.08194",
+   "davis_fudge",
+   "03_visual_language_agnostic",
+   "ok",
+   2111151
+  ],
+  [
+   "2405.03104",
+   "geocontrastnet",
+   "03_visual_language_agnostic",
+   "ok",
+   1484497
+  ],
+  [
+   "2208.11168",
+   "doc2graph",
+   "03_visual_language_agnostic",
+   "ok",
+   2494562
+  ],
+  [
+   "2202.13669",
+   "lilt_language_independent",
+   "03_visual_language_agnostic",
+   "ok",
+   1917584
+  ],
+  [
+   "2010.02358",
+   "visualwordgrid",
+   "03_visual_language_agnostic",
+   "ok",
+   4130366
+  ],
+  [
+   "1809.08799",
+   "chargrid",
+   "03_visual_language_agnostic",
+   "ok",
+   1458240
+  ],
+  [
+   "1909.04469",
+   "chargrid_ocr",
+   "03_visual_language_agnostic",
+   "ok",
+   1876566
+  ],
+  [
+   "1909.04948",
+   "bertgrid",
+   "03_visual_language_agnostic",
+   "ok",
+   504623
+  ],
+  [
+   "2105.11672",
+   "vibertgrid",
+   "03_visual_language_agnostic",
+   "ok",
+   2612969
+  ],
+  [
+   "1903.12363",
+   "cutie",
+   "03_visual_language_agnostic",
+   "ok",
+   9781564
+  ],
+  [
+   "2303.00289",
+   "structextv2",
+   "03_visual_language_agnostic",
+   "ok",
+   4812728
+  ],
+  [
+   "2203.02378",
+   "dit_document_image_transformer",
+   "03_visual_language_agnostic",
+   "ok",
+   4684552
+  ],
+  [
+   "2107.04396",
+   "adobe_multimodal_grouping_form_structure",
+   "03_visual_language_agnostic",
+   "ok",
+   2417053
+  ],
+  [
+   "2107.04419",
+   "form2seq",
+   "03_visual_language_agnostic",
+   "ok",
+   3970966
+  ],
+  [
+   "2005.00642",
+   "spade_spatial_dependency_parsing",
+   "04_graph_spatial_kv_linking",
+   "ok",
+   5810416
+  ],
+  [
+   "1903.11279",
+   "liu_gcn_vrd",
+   "04_graph_spatial_kv_linking",
+   "ok",
+   1841079
+  ],
+  [
+   "2004.07464",
+   "pick",
+   "04_graph_spatial_kv_linking",
+   "ok",
+   2320423
+  ],
+  [
+   "2304.10759",
+   "geolayoutlm",
+   "04_graph_spatial_kv_linking",
+   "ok",
+   2404297
+  ],
+  [
+   "2305.13850",
+   "gose_global_structure_re",
+   "04_graph_spatial_kv_linking",
+   "ok",
+   986703
+  ],
+  [
+   "2304.07957",
+   "kvpformer",
+   "04_graph_spatial_kv_linking",
+   "ok",
+   1574106
+  ],
+  [
+   "2401.09220",
+   "univie",
+   "04_graph_spatial_kv_linking",
+   "ok",
+   1904132
+  ],
+  [
+   "2401.03472",
+   "peneo_rfund",
+   "04_graph_spatial_kv_linking",
+   "ok",
+   7904231
+  ],
+  [
+   "2405.17336",
+   "xformparser",
+   "04_graph_spatial_kv_linking",
+   "ok",
+   1553503
+  ],
+  [
+   "2203.08411",
+   "formnet",
+   "04_graph_spatial_kv_linking",
+   "ok",
+   3684369
+  ],
+  [
+   "2305.02549",
+   "formnetv2",
+   "04_graph_spatial_kv_linking",
+   "ok",
+   2124703
+  ],
+  [
+   "2307.07929",
+   "doctr_structured_ie",
+   "04_graph_spatial_kv_linking",
+   "ok",
+   6556620
+  ],
+  [
+   "2203.13530",
+   "graphdoc",
+   "04_graph_spatial_kv_linking",
+   "ok",
+   14905910
+  ],
+  [
+   "2409.19573",
+   "see_then_tell",
+   "04_graph_spatial_kv_linking",
+   "ok",
+   45323931
+  ],
+  [
+   "2608.20868",
+   "identify_locate_link",
+   "04_graph_spatial_kv_linking",
+   "ok",
+   6047384
+  ],
+  [
+   "2211.07730",
+   "queryform",
+   "05_zero_few_shot_template",
+   "ok",
+   7768794
+  ],
+  [
+   "2110.04282",
+   "field_extraction_unlabeled_rules",
+   "05_zero_few_shot_template",
+   "ok",
+   2639498
+  ],
+  [
+   "2109.13967",
+   "oneshot_kie_partial_graph_matching",
+   "05_zero_few_shot_template",
+   "ok",
+   15378532
+  ],
+  [
+   "2009.04153",
+   "oneshot_text_field_labeling_belief_prop",
+   "05_zero_few_shot_template",
+   "ok",
+   20743801
+  ],
+  [
+   "1812.07248",
+   "attend_copy_parse",
+   "05_zero_few_shot_template",
+   "ok",
+   353268
+  ],
+  [
+   "1912.13318",
+   "layoutlm",
+   "06_layout_pretrained_lms",
+   "ok",
+   1078240
+  ],
+  [
+   "2012.14740",
+   "layoutlmv2",
+   "06_layout_pretrained_lms",
+   "ok",
+   982675
+  ],
+  [
+   "2204.08387",
+   "layoutlmv3",
+   "06_layout_pretrained_lms",
+   "ok",
+   1245765
+  ],
+  [
+   "2108.04539",
+   "bros",
+   "06_layout_pretrained_lms",
+   "ok",
+   3828805
+  ],
+  [
+   "2106.11539",
+   "docformer",
+   "06_layout_pretrained_lms",
+   "ok",
+   17604354
+  ],
+  [
+   "2306.01733",
+   "docformerv2",
+   "06_layout_pretrained_lms",
+   "ok",
+   2759793
+  ],
+  [
+   "2002.08087",
+   "lambert",
+   "06_layout_pretrained_lms",
+   "ok",
+   613201
+  ],
+  [
+   "2108.02923",
+   "structext",
+   "06_layout_pretrained_lms",
+   "ok",
+   4928317
+  ],
+  [
+   "2212.02623",
+   "udop",
+   "06_layout_pretrained_lms",
+   "ok",
+   9031525
+  ],
+  [
+   "2210.06155",
+   "ernie_layout",
+   "06_layout_pretrained_lms",
+   "ok",
+   4276942
+  ],
+  [
+   "2102.09550",
+   "tilt",
+   "06_layout_pretrained_lms",
+   "ok",
+   3172111
+  ],
+  [
+   "2105.11210",
+   "structurallm",
+   "06_layout_pretrained_lms",
+   "ok",
+   1436661
+  ],
+  [
+   "2203.06947",
+   "xylayoutlm",
+   "06_layout_pretrained_lms",
+   "ok",
+   2302095
+  ],
+  [
+   "2108.11591",
+   "layoutreader",
+   "06_layout_pretrained_lms",
+   "ok",
+   1160496
+  ],
+  [
+   "2102.06732",
+   "vies_ephoie",
+   "06_layout_pretrained_lms",
+   "ok",
+   2972397
+  ],
+  [
+   "2005.13118",
+   "trie",
+   "06_layout_pretrained_lms",
+   "ok",
+   1293183
+  ],
+  [
+   "2111.15664",
+   "donut",
+   "07_ocr_free_end_to_end",
+   "ok",
+   7105978
+  ],
+  [
+   "2210.03347",
+   "pix2struct",
+   "07_ocr_free_end_to_end",
+   "ok",
+   5226538
+  ],
+  [
+   "2203.16618",
+   "dessurt",
+   "07_ocr_free_end_to_end",
+   "ok",
+   7679293
+  ],
+  [
+   "2206.03001",
+   "pp_ocrv3",
+   "08_ocr_engines_multilingual",
+   "ok",
+   5354424
+  ],
+  [
+   "2507.05595",
+   "paddleocr_3_tech_report",
+   "08_ocr_engines_multilingual",
+   "ok",
+   7968133
+  ],
+  [
+   "2507.18264",
+   "zero_shot_ocr_sinhala_tamil",
+   "08_ocr_engines_multilingual",
+   "ok",
+   671204
+  ],
+  [
+   "2604.12978",
+   "glotocr_bench",
+   "08_ocr_engines_multilingual",
+   "ok",
+   713722
+  ],
+  [
+   "2511.04479",
+   "thaiocrbench",
+   "08_ocr_engines_multilingual",
+   "ok",
+   5616186
+  ],
+  [
+   "1604.00187",
+   "phocnet",
+   "09_word_spotting_query_by_example",
+   "ok",
+   409244
+  ],
+  [
+   "1707.01294",
+   "r_phoc_segmentation_free",
+   "09_word_spotting_query_by_example",
+   "ok",
+   1671354
+  ],
+  [
+   "1806.10866",
+   "rusakov_phoc_reevaluation",
+   "09_word_spotting_query_by_example",
+   "ok",
+   293977
+  ],
+  [
+   "https://research.google.com/pubs/archive/33418.pdf",
+   "tesseract_overview_smith_2007.pdf",
+   "08_ocr_engines_multilingual",
+   "ok",
+   168158
+  ],
+  [
+   "https://www.cs.uoi.gr/~cnikou/Publications/J36-Web-Giotis-Sfikas-Gatos-Nikou-Pattern-Recognition-2017.pdf",
+   "giotis_2017_word_spotting_survey.pdf",
+   "09_word_spotting_query_by_example",
+   "ok",
+   504600
+  ],
+  [
+   "https://aclanthology.org/2025.findings-acl.552.pdf",
+   "p2net_acl2025_findings.pdf",
+   "04_graph_spatial_kv_linking",
+   "ok",
+   755378
+  ],
+  [
+   "2305.04460",
+   "lagnn_language_independent_neurosymbolic",
+   "03_visual_language_agnostic",
+   "ok",
+   1359162
+  ],
+  [
+   "2010.11685",
+   "docstruct_hierarchy_kv",
+   "04_graph_spatial_kv_linking",
+   "ok",
+   2662569
+  ],
+  [
+   "2304.13530",
+   "kv_extraction_full_handwritten_pages",
+   "09_word_spotting_query_by_example",
+   "ok",
+   5635269
+  ],
+  [
+   "2410.01160",
+   "graphrevisedie",
+   "04_graph_spatial_kv_linking",
+   "ok",
+   3471372
+  ]
+ ],
+ "papers": [
+  [
+   "01_surveys",
+   "2408.01287",
+   "ding_vrd_content_understanding_survey"
+  ],
+  [
+   "01_surveys",
+   "2111.08609",
+   "cui_document_ai_survey"
+  ],
+  [
+   "01_surveys",
+   "2507.09861",
+   "ding_mllm_vrdu_survey"
+  ],
+  [
+   "02_datasets_benchmarks",
+   "1905.13538",
+   "funsd"
+  ],
+  [
+   "02_datasets_benchmarks",
+   "2010.05322",
+   "revising_funsd_kv_detection"
+  ],
+  [
+   "02_datasets_benchmarks",
+   "2104.08836",
+   "layoutxlm_xfund"
+  ],
+  [
+   "02_datasets_benchmarks",
+   "2103.10213",
+   "sroie_icdar2019"
+  ],
+  [
+   "02_datasets_benchmarks",
+   "2105.05796",
+   "kleister"
+  ],
+  [
+   "02_datasets_benchmarks",
+   "2302.05658",
+   "docile"
+  ],
+  [
+   "02_datasets_benchmarks",
+   "2211.15421",
+   "vrdu_benchmark_unseen_templates"
+  ],
+  [
+   "02_datasets_benchmarks",
+   "2405.00505",
+   "kvp10k"
+  ],
+  [
+   "02_datasets_benchmarks",
+   "2304.13606",
+   "simara_kv_full_pages"
+  ],
+  [
+   "02_datasets_benchmarks",
+   "2509.16506",
+   "commonforms_field_detection"
+  ],
+  [
+   "02_datasets_benchmarks",
+   "2603.29832",
+   "autoformbench"
+  ],
+  [
+   "02_datasets_benchmarks",
+   "2607.05614",
+   "bafco_bangla_forms"
+  ],
+  [
+   "02_datasets_benchmarks",
+   "2307.10551",
+   "ppn_clex_dataset"
+  ],
+  [
+   "02_datasets_benchmarks",
+   "2206.01062",
+   "doclaynet"
+  ],
+  [
+   "02_datasets_benchmarks",
+   "2007.00398",
+   "docvqa"
+  ],
+  [
+   "03_visual_language_agnostic",
+   "1909.02576",
+   "davis_template_free_form_parsing_NAF"
+  ],
+  [
+   "03_visual_language_agnostic",
+   "2105.08194",
+   "davis_fudge"
+  ],
+  [
+   "03_visual_language_agnostic",
+   "2405.03104",
+   "geocontrastnet"
+  ],
+  [
+   "03_visual_language_agnostic",
+   "2208.11168",
+   "doc2graph"
+  ],
+  [
+   "03_visual_language_agnostic",
+   "2202.13669",
+   "lilt_language_independent"
+  ],
+  [
+   "03_visual_language_agnostic",
+   "2010.02358",
+   "visualwordgrid"
+  ],
+  [
+   "03_visual_language_agnostic",
+   "1809.08799",
+   "chargrid"
+  ],
+  [
+   "03_visual_language_agnostic",
+   "1909.04469",
+   "chargrid_ocr"
+  ],
+  [
+   "03_visual_language_agnostic",
+   "1909.04948",
+   "bertgrid"
+  ],
+  [
+   "03_visual_language_agnostic",
+   "2105.11672",
+   "vibertgrid"
+  ],
+  [
+   "03_visual_language_agnostic",
+   "1903.12363",
+   "cutie"
+  ],
+  [
+   "03_visual_language_agnostic",
+   "2303.00289",
+   "structextv2"
+  ],
+  [
+   "03_visual_language_agnostic",
+   "2203.02378",
+   "dit_document_image_transformer"
+  ],
+  [
+   "03_visual_language_agnostic",
+   "2107.04396",
+   "adobe_multimodal_grouping_form_structure"
+  ],
+  [
+   "03_visual_language_agnostic",
+   "2107.04419",
+   "form2seq"
+  ],
+  [
+   "04_graph_spatial_kv_linking",
+   "2005.00642",
+   "spade_spatial_dependency_parsing"
+  ],
+  [
+   "04_graph_spatial_kv_linking",
+   "1903.11279",
+   "liu_gcn_vrd"
+  ],
+  [
+   "04_graph_spatial_kv_linking",
+   "2004.07464",
+   "pick"
+  ],
+  [
+   "04_graph_spatial_kv_linking",
+   "2304.10759",
+   "geolayoutlm"
+  ],
+  [
+   "04_graph_spatial_kv_linking",
+   "2305.13850",
+   "gose_global_structure_re"
+  ],
+  [
+   "04_graph_spatial_kv_linking",
+   "2304.07957",
+   "kvpformer"
+  ],
+  [
+   "04_graph_spatial_kv_linking",
+   "2401.09220",
+   "univie"
+  ],
+  [
+   "04_graph_spatial_kv_linking",
+   "2401.03472",
+   "peneo_rfund"
+  ],
+  [
+   "04_graph_spatial_kv_linking",
+   "2405.17336",
+   "xformparser"
+  ],
+  [
+   "04_graph_spatial_kv_linking",
+   "2203.08411",
+   "formnet"
+  ],
+  [
+   "04_graph_spatial_kv_linking",
+   "2305.02549",
+   "formnetv2"
+  ],
+  [
+   "04_graph_spatial_kv_linking",
+   "2307.07929",
+   "doctr_structured_ie"
+  ],
+  [
+   "04_graph_spatial_kv_linking",
+   "2203.13530",
+   "graphdoc"
+  ],
+  [
+   "04_graph_spatial_kv_linking",
+   "2409.19573",
+   "see_then_tell"
+  ],
+  [
+   "04_graph_spatial_kv_linking",
+   "2608.20868",
+   "identify_locate_link"
+  ],
+  [
+   "05_zero_few_shot_template",
+   "2211.07730",
+   "queryform"
+  ],
+  [
+   "05_zero_few_shot_template",
+   "2110.04282",
+   "field_extraction_unlabeled_rules"
+  ],
+  [
+   "05_zero_few_shot_template",
+   "2109.13967",
+   "oneshot_kie_partial_graph_matching"
+  ],
+  [
+   "05_zero_few_shot_template",
+   "2009.04153",
+   "oneshot_text_field_labeling_belief_prop"
+  ],
+  [
+   "05_zero_few_shot_template",
+   "1812.07248",
+   "attend_copy_parse"
+  ],
+  [
+   "06_layout_pretrained_lms",
+   "1912.13318",
+   "layoutlm"
+  ],
+  [
+   "06_layout_pretrained_lms",
+   "2012.14740",
+   "layoutlmv2"
+  ],
+  [
+   "06_layout_pretrained_lms",
+   "2204.08387",
+   "layoutlmv3"
+  ],
+  [
+   "06_layout_pretrained_lms",
+   "2108.04539",
+   "bros"
+  ],
+  [
+   "06_layout_pretrained_lms",
+   "2106.11539",
+   "docformer"
+  ],
+  [
+   "06_layout_pretrained_lms",
+   "2306.01733",
+   "docformerv2"
+  ],
+  [
+   "06_layout_pretrained_lms",
+   "2002.08087",
+   "lambert"
+  ],
+  [
+   "06_layout_pretrained_lms",
+   "2108.02923",
+   "structext"
+  ],
+  [
+   "06_layout_pretrained_lms",
+   "2212.02623",
+   "udop"
+  ],
+  [
+   "06_layout_pretrained_lms",
+   "2210.06155",
+   "ernie_layout"
+  ],
+  [
+   "06_layout_pretrained_lms",
+   "2102.09550",
+   "tilt"
+  ],
+  [
+   "06_layout_pretrained_lms",
+   "2105.11210",
+   "structurallm"
+  ],
+  [
+   "06_layout_pretrained_lms",
+   "2203.06947",
+   "xylayoutlm"
+  ],
+  [
+   "06_layout_pretrained_lms",
+   "2108.11591",
+   "layoutreader"
+  ],
+  [
+   "06_layout_pretrained_lms",
+   "2102.06732",
+   "vies_ephoie"
+  ],
+  [
+   "06_layout_pretrained_lms",
+   "2005.13118",
+   "trie"
+  ],
+  [
+   "07_ocr_free_end_to_end",
+   "2111.15664",
+   "donut"
+  ],
+  [
+   "07_ocr_free_end_to_end",
+   "2210.03347",
+   "pix2struct"
+  ],
+  [
+   "07_ocr_free_end_to_end",
+   "2203.16618",
+   "dessurt"
+  ],
+  [
+   "08_ocr_engines_multilingual",
+   "2206.03001",
+   "pp_ocrv3"
+  ],
+  [
+   "08_ocr_engines_multilingual",
+   "2507.05595",
+   "paddleocr_3_tech_report"
+  ],
+  [
+   "08_ocr_engines_multilingual",
+   "2507.18264",
+   "zero_shot_ocr_sinhala_tamil"
+  ],
+  [
+   "08_ocr_engines_multilingual",
+   "2604.12978",
+   "glotocr_bench"
+  ],
+  [
+   "08_ocr_engines_multilingual",
+   "2511.04479",
+   "thaiocrbench"
+  ],
+  [
+   "09_word_spotting_query_by_example",
+   "1604.00187",
+   "phocnet"
+  ],
+  [
+   "09_word_spotting_query_by_example",
+   "1707.01294",
+   "r_phoc_segmentation_free"
+  ],
+  [
+   "09_word_spotting_query_by_example",
+   "1806.10866",
+   "rusakov_phoc_reevaluation"
+  ],
+  [
+   "03_visual_language_agnostic",
+   "2305.04460",
+   "lagnn_language_independent_neurosymbolic"
+  ],
+  [
+   "04_graph_spatial_kv_linking",
+   "2010.11685",
+   "docstruct_hierarchy_kv"
+  ],
+  [
+   "09_word_spotting_query_by_example",
+   "2304.13530",
+   "kv_extraction_full_handwritten_pages"
+  ],
+  [
+   "04_graph_spatial_kv_linking",
+   "2410.01160",
+   "graphrevisedie"
+  ]
+ ]
+}

@@ -1,0 +1,80 @@
+# ---- Secrets / local config ----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials*.json
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+pip-wheel-metadata/
+.venv/
+venv/
+env/
+ENV/
+.python-version
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ---- Model weights / large artifacts ----
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.h5
+*.pb
+*.tflite
+*.bin
+models/
+checkpoints/
+runs/
+wandb/
+mlruns/
+outputs/
+
+# ---- Data (keep small samples in-repo deliberately with git add -f) ----
+data/
+datasets/
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# ---- Logs / temp ----
+logs/
+*.log
+tmp/
+temp/
+*.tmp
+
+# ---- OS / editor ----
+.DS_Store
+.AppleDouble
+._*
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+literature/*models/
+
+# ---- Project-specific ----
+# re-cloned on setup (see HANDOFF.md); nested git repos must not be committed
+third_party/
+# 381 MB of PDFs; literature/papers/INDEX.md lists sources to re-download
+literature/papers/**/*.pdf

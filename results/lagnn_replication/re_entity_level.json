@@ -1,0 +1,239 @@
+{
+ "6222": {
+  "funsd": {
+   "p": 1.0,
+   "r": 0.5565,
+   "f1": 0.7151,
+   "tp": 458,
+   "n_pred": 458,
+   "n_gold": 823,
+   "unmatched_nodes": 47,
+   "nodes": 5680,
+   "missing_docs": 0
+  },
+  "xfund-ja": {
+   "p": 1.0,
+   "r": 0.5273,
+   "f1": 0.6905,
+   "tp": 675,
+   "n_pred": 675,
+   "n_gold": 1280,
+   "unmatched_nodes": 0,
+   "nodes": 13722,
+   "missing_docs": 0
+  },
+  "xfund-zh": {
+   "p": 1.0,
+   "r": 0.5376,
+   "f1": 0.6993,
+   "tp": 929,
+   "n_pred": 929,
+   "n_gold": 1728,
+   "unmatched_nodes": 0,
+   "nodes": 17589,
+   "missing_docs": 0
+  },
+  "xfund-fr": {
+   "p": 1.0,
+   "r": 0.5332,
+   "f1": 0.6955,
+   "tp": 683,
+   "n_pred": 683,
+   "n_gold": 1281,
+   "unmatched_nodes": 0,
+   "nodes": 6765,
+   "missing_docs": 0
+  },
+  "xfund-pt": {
+   "p": 1.0,
+   "r": 0.447,
+   "f1": 0.6178,
+   "tp": 864,
+   "n_pred": 864,
+   "n_gold": 1933,
+   "unmatched_nodes": 0,
+   "nodes": 9477,
+   "missing_docs": 0
+  },
+  "xfund-es": {
+   "p": 1.0,
+   "r": 0.4058,
+   "f1": 0.5773,
+   "tp": 493,
+   "n_pred": 493,
+   "n_gold": 1215,
+   "unmatched_nodes": 0,
+   "nodes": 7852,
+   "missing_docs": 0
+  },
+  "xfund-it": {
+   "p": 1.0,
+   "r": 0.3776,
+   "f1": 0.5482,
+   "tp": 603,
+   "n_pred": 603,
+   "n_gold": 1597,
+   "unmatched_nodes": 0,
+   "nodes": 7917,
+   "missing_docs": 0
+  }
+ },
+ "1": {
+  "funsd": {
+   "p": 1.0,
+   "r": 0.5176,
+   "f1": 0.6821,
+   "tp": 426,
+   "n_pred": 426,
+   "n_gold": 823,
+   "unmatched_nodes": 47,
+   "nodes": 5680,
+   "missing_docs": 0
+  },
+  "xfund-ja": {
+   "p": 1.0,
+   "r": 0.5258,
+   "f1": 0.6892,
+   "tp": 673,
+   "n_pred": 673,
+   "n_gold": 1280,
+   "unmatched_nodes": 0,
+   "nodes": 13722,
+   "missing_docs": 0
+  },
+  "xfund-zh": {
+   "p": 1.0,
+   "r": 0.5584,
+   "f1": 0.7167,
+   "tp": 965,
+   "n_pred": 965,
+   "n_gold": 1728,
+   "unmatched_nodes": 0,
+   "nodes": 17589,
+   "missing_docs": 0
+  },
+  "xfund-fr": {
+   "p": 1.0,
+   "r": 0.4934,
+   "f1": 0.6607,
+   "tp": 632,
+   "n_pred": 632,
+   "n_gold": 1281,
+   "unmatched_nodes": 0,
+   "nodes": 6765,
+   "missing_docs": 0
+  },
+  "xfund-pt": {
+   "p": 1.0,
+   "r": 0.3802,
+   "f1": 0.551,
+   "tp": 735,
+   "n_pred": 735,
+   "n_gold": 1933,
+   "unmatched_nodes": 0,
+   "nodes": 9477,
+   "missing_docs": 0
+  },
+  "xfund-es": {
+   "p": 1.0,
+   "r": 0.377,
+   "f1": 0.5475,
+   "tp": 458,
+   "n_pred": 458,
+   "n_gold": 1215,
+   "unmatched_nodes": 0,
+   "nodes": 7852,
+   "missing_docs": 0
+  },
+  "xfund-it": {
+   "p": 1.0,
+   "r": 0.3125,
+   "f1": 0.4761,
+   "tp": 499,
+   "n_pred": 499,
+   "n_gold": 1597,
+   "unmatched_nodes": 0,
+   "nodes": 7917,
+   "missing_docs": 0
+  }
+ },
+ "2": {
+  "funsd": {
+   "p": 1.0,
+   "r": 0.5261,
+   "f1": 0.6895,
+   "tp": 433,
+   "n_pred": 433,
+   "n_gold": 823,
+   "unmatched_nodes": 47,
+   "nodes": 5680,
+   "missing_docs": 0
+  },
+  "xfund-ja": {
+   "p": 1.0,
+   "r": 0.5359,
+   "f1": 0.6979,
+   "tp": 686,
+   "n_pred": 686,
+   "n_gold": 1280,
+   "unmatched_nodes": 0,
+   "nodes": 13722,
+   "missing_docs": 0
+  },
+  "xfund-zh": {
+   "p": 1.0,
+   "r": 0.5469,
+   "f1": 0.7071,
+   "tp": 945,
+   "n_pred": 945,
+   "n_gold": 1728,
+   "unmatched_nodes": 0,
+   "nodes": 17589,
+   "missing_docs": 0
+  },
+  "xfund-fr": {
+   "p": 1.0,
+   "r": 0.4941,
+   "f1": 0.6614,
+   "tp": 633,
+   "n_pred": 633,
+   "n_gold": 1281,
+   "unmatched_nodes": 0,
+   "nodes": 6765,
+   "missing_docs": 0
+  },
+  "xfund-pt": {
+   "p": 1.0,
+   "r": 0.4046,
+   "f1": 0.5761,
+   "tp": 782,
+   "n_pred": 782,
+   "n_gold": 1933,
+   "unmatched_nodes": 0,
+   "nodes": 9477,
+   "missing_docs": 0
+  },
+  "xfund-es": {
+   "p": 1.0,
+   "r": 0.4008,
+   "f1": 0.5723,
+   "tp": 487,
+   "n_pred": 487,
+   "n_gold": 1215,
+   "unmatched_nodes": 0,
+   "nodes": 7852,
+   "missing_docs": 0
+  },
+  "xfund-it": {
+   "p": 1.0,
+   "r": 0.3168,
+   "f1": 0.4812,
+   "tp": 506,
+   "n_pred": 506,
+   "n_gold": 1597,
+   "unmatched_nodes": 0,
+   "nodes": 7917,
+   "missing_docs": 0
+  }
+ }
+}
