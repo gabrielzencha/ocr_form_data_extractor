@@ -1,0 +1,164 @@
+{
+ "args": {
+  "model": "models/lilt-infoxlm-base",
+  "tokenizer": "models/lilt-infoxlm-base",
+  "train": "funsd",
+  "steps": 5000,
+  "bs": 8,
+  "accum": 4,
+  "lr": 6.25e-06,
+  "warmup": 0.1,
+  "head_lr_mult": 40.0,
+  "seed": 42,
+  "eval_sets": "funsd,xfund-zh,xfund-ja,xfund-es,xfund-fr,xfund-it,xfund-de,xfund-pt",
+  "out": "results/lilt_re_headlr40",
+  "time_only": false,
+  "fp16": true
+ },
+ "test": {
+  "funsd": {
+   "doc_gold": {
+    "p": 0.7347,
+    "r": 0.6561,
+    "f1": 0.6932,
+    "tp": 540,
+    "n_pred": 735,
+    "n_gold": 823
+   },
+   "chunk_gold_paper_protocol": {
+    "p": 0.7347,
+    "r": 0.6658,
+    "f1": 0.6986,
+    "tp": 540,
+    "n_pred": 735,
+    "n_gold": 811
+   }
+  },
+  "xfund-zh": {
+   "doc_gold": {
+    "p": 0.6672,
+    "r": 0.4664,
+    "f1": 0.549,
+    "tp": 806,
+    "n_pred": 1208,
+    "n_gold": 1728
+   },
+   "chunk_gold_paper_protocol": {
+    "p": 0.6672,
+    "r": 0.5173,
+    "f1": 0.5828,
+    "tp": 806,
+    "n_pred": 1208,
+    "n_gold": 1558
+   }
+  },
+  "xfund-ja": {
+   "doc_gold": {
+    "p": 0.727,
+    "r": 0.3516,
+    "f1": 0.4739,
+    "tp": 450,
+    "n_pred": 619,
+    "n_gold": 1280
+   },
+   "chunk_gold_paper_protocol": {
+    "p": 0.727,
+    "r": 0.4021,
+    "f1": 0.5178,
+    "tp": 450,
+    "n_pred": 619,
+    "n_gold": 1119
+   }
+  },
+  "xfund-es": {
+   "doc_gold": {
+    "p": 0.6634,
+    "r": 0.4477,
+    "f1": 0.5346,
+    "tp": 544,
+    "n_pred": 820,
+    "n_gold": 1215
+   },
+   "chunk_gold_paper_protocol": {
+    "p": 0.6634,
+    "r": 0.5221,
+    "f1": 0.5843,
+    "tp": 544,
+    "n_pred": 820,
+    "n_gold": 1042
+   }
+  },
+  "xfund-fr": {
+   "doc_gold": {
+    "p": 0.6486,
+    "r": 0.5519,
+    "f1": 0.5964,
+    "tp": 707,
+    "n_pred": 1090,
+    "n_gold": 1281
+   },
+   "chunk_gold_paper_protocol": {
+    "p": 0.6486,
+    "r": 0.6329,
+    "f1": 0.6407,
+    "tp": 707,
+    "n_pred": 1090,
+    "n_gold": 1117
+   }
+  },
+  "xfund-it": {
+   "doc_gold": {
+    "p": 0.6042,
+    "r": 0.4358,
+    "f1": 0.5064,
+    "tp": 696,
+    "n_pred": 1152,
+    "n_gold": 1597
+   },
+   "chunk_gold_paper_protocol": {
+    "p": 0.6042,
+    "r": 0.5387,
+    "f1": 0.5696,
+    "tp": 696,
+    "n_pred": 1152,
+    "n_gold": 1292
+   }
+  },
+  "xfund-de": {
+   "doc_gold": {
+    "p": 0.6325,
+    "r": 0.3988,
+    "f1": 0.4891,
+    "tp": 518,
+    "n_pred": 819,
+    "n_gold": 1299
+   },
+   "chunk_gold_paper_protocol": {
+    "p": 0.6325,
+    "r": 0.4353,
+    "f1": 0.5157,
+    "tp": 518,
+    "n_pred": 819,
+    "n_gold": 1190
+   }
+  },
+  "xfund-pt": {
+   "doc_gold": {
+    "p": 0.557,
+    "r": 0.3864,
+    "f1": 0.4563,
+    "tp": 747,
+    "n_pred": 1341,
+    "n_gold": 1933
+   },
+   "chunk_gold_paper_protocol": {
+    "p": 0.557,
+    "r": 0.4944,
+    "f1": 0.5238,
+    "tp": 747,
+    "n_pred": 1341,
+    "n_gold": 1511
+   }
+  }
+ }
+}

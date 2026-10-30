@@ -59,6 +59,10 @@ def run(seed, a, tr, va, tests):
         if bad >= a.patience:
             break
     model.load_state_dict(state)
+    if a.save:
+        os.makedirs("models/geolinker", exist_ok=True)
+        torch.save({"state": state, "in_node": tr[0]["x"].shape[1], "args": vars(a)},
+                   f"models/geolinker/{a.tag}_s{seed}.pt")
     return {name: evaluate(model, gs, a.one_key).as_dict() for name, gs in tests.items()}, best, ep + 1, sum(p.numel() for p in model.parameters())
 
 
@@ -73,6 +77,7 @@ def main():
     ap.add_argument("--pos_weight", type=float, default=3.0)
     ap.add_argument("--one_key", action="store_true")
     ap.add_argument("--tag", default="geolinker")
+    ap.add_argument("--save", action="store_true", help="save each seed's best model to models/geolinker/")
     a = ap.parse_args()
     torch.set_num_threads(4)
     train_docs = load("funsd", "train")

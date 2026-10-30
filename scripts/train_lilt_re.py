@@ -48,13 +48,17 @@ def main():
     ap.add_argument("--accum", type=int, default=4)
     ap.add_argument("--lr", type=float, default=6.25e-6)
     ap.add_argument("--warmup", type=float, default=0.1)
+    ap.add_argument("--head_lr_mult", type=float, default=4.0, help="speedup_r in LiLT's xfun_trainer.py")
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument("--eval_sets", default="funsd," + ",".join(f"xfund-{l}" for l in XFUND_LANGS))
     ap.add_argument("--out", default="results/lilt_re")
     ap.add_argument("--time_only", action="store_true")
+    ap.add_argument("--no_fp16", dest="fp16", action="store_false", help="fp16 autocast is on by default on CUDA")
     a = ap.parse_args()
     random.seed(a.seed); np.random.seed(a.seed); torch.manual_seed(a.seed)
-    dev = "mps" if torch.backends.mps.is_available() else "cpu"
+    dev = "cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu"
+    amp = a.fp16 and dev == "cuda"
+    scaler = torch.amp.GradScaler("cuda", enabled=amp)
     from transformers import AutoTokenizer, XLMRobertaTokenizerFast
     tok = AutoTokenizer.from_pretrained(a.tokenizer)
     if "LayoutXLM" in type(tok).__name__:  # same sentencepiece vocab as xlm-roberta-base (original recipe)
@@ -62,7 +66,12 @@ def main():
     model = LiltRE(a.model).to(dev)
     chunks = [c for d in load(a.train, "train") for c in chunk_document(d, tok) if c["pairs"]]
     print(f"train chunks {len(chunks)}", flush=True)
-    opt = torch.optim.AdamW(model.parameters(), lr=a.lr)
+    # As LiLT's XfunReTrainer.create_optimizer: decoder params except rel_classifier train at
+    # head_lr_mult x lr; HF Trainer's default weight decay is 0
+    fast = [p for n, p in model.named_parameters() if n.startswith("dec.") and "rel_classifier" not in n]
+    slow = [p for n, p in model.named_parameters() if not (n.startswith("dec.") and "rel_classifier" not in n)]
+    opt = torch.optim.AdamW([{"params": fast, "lr": a.lr * a.head_lr_mult}, {"params": slow, "lr": a.lr}],
+                            weight_decay=0.0)
     from transformers import get_linear_schedule_with_warmup
     sch = get_linear_schedule_with_warmup(opt, int(a.warmup * a.steps), a.steps)
     model.train(); t0 = time.time(); step = 0; order = []
@@ -73,12 +82,13 @@ def main():
                 order = list(range(len(chunks))); random.shuffle(order)
             b = [chunks[order.pop()] for _ in range(min(a.bs, len(order)))]
             ids, bb, am = collate(b, tok.pad_token_id)
-            outs = model(ids.to(dev), bb.to(dev), am.to(dev), b)
-            logits = torch.cat([o for o in outs if o is not None])
+            with torch.autocast("cuda", dtype=torch.float16, enabled=amp):
+                outs = model(ids.to(dev), bb.to(dev), am.to(dev), b)
+                logits = torch.cat([o for o in outs if o is not None])
             labels = torch.tensor([l for c in b for l in c["pair_labels"]], device=dev)
-            loss = F.cross_entropy(logits, labels) / a.accum
-            loss.backward(); tot += loss.item()
-        opt.step(); sch.step(); step += 1
+            loss = F.cross_entropy(logits.float(), labels) / a.accum
+            scaler.scale(loss).backward(); tot += loss.item()
+        scaler.step(opt); scaler.update(); sch.step(); step += 1
         if step % 50 == 0 or step == 1:
             el = time.time() - t0
             print(f"step {step}/{a.steps} loss {tot:.4f} {el/step:.2f}s/step eta {(a.steps-step)*el/step/3600:.1f}h", flush=True)

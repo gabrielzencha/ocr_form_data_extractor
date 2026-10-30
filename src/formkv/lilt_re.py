@@ -30,10 +30,10 @@ class BiaffineAttention(nn.Module):
 class REDecoder(nn.Module):
     """Copy of LiLTfinetune/modules/decoders/re.py, returning per-pair logits."""
 
-    def __init__(self, hidden, dropout):
+    def __init__(self, input_size, hidden, dropout):
         super().__init__()
-        self.entity_emb = nn.Embedding(3, hidden, scale_grad_by_freq=True)
-        proj = nn.Sequential(nn.Linear(hidden * 2, hidden), nn.ReLU(), nn.Dropout(dropout),
+        self.entity_emb = nn.Embedding(3, input_size, scale_grad_by_freq=True)
+        proj = nn.Sequential(nn.Linear(input_size * 2, hidden), nn.ReLU(), nn.Dropout(dropout),
                              nn.Linear(hidden, hidden // 2), nn.ReLU(), nn.Dropout(dropout))
         self.ffnn_head, self.ffnn_tail = copy.deepcopy(proj), copy.deepcopy(proj)
         self.rel_classifier = BiaffineAttention(hidden // 2, 2)
@@ -45,15 +45,30 @@ class REDecoder(nn.Module):
 
 
 class LiltRE(nn.Module):
+    """As LiLTRobertaLikeForRelationExtraction: the decoder reads text and layout streams
+    concatenated (768 + 192), after dropout, and its Linear/Embedding layers get the
+    encoder's normal(0, initializer_range) init (Bilinear keeps the PyTorch default)."""
+
     def __init__(self, name="SCUT-DLVCLab/lilt-infoxlm-base"):
         super().__init__()
         from transformers import LiltModel
         self.enc = LiltModel.from_pretrained(name)
         cfg = self.enc.config
-        self.dec = REDecoder(cfg.hidden_size, cfg.hidden_dropout_prob)
+        # HF LiltModel drops the final layout stream; the last LiltLayer returns it as output[1]
+        self._layout = None
+        self.enc.encoder.layer[-1].register_forward_hook(lambda m, i, o: setattr(self, "_layout", o[1]))
+        self.dropout = nn.Dropout(cfg.hidden_dropout_prob)
+        self.dec = REDecoder(cfg.hidden_size + cfg.hidden_size // cfg.channel_shrink_ratio,
+                             cfg.hidden_size, cfg.hidden_dropout_prob)
+        for mod in self.dec.modules():
+            if isinstance(mod, (nn.Linear, nn.Embedding)):
+                mod.weight.data.normal_(0.0, cfg.initializer_range)
+                if isinstance(mod, nn.Linear) and mod.bias is not None:
+                    mod.bias.data.zero_()
 
     def forward(self, input_ids, bbox, attention_mask, chunks):
-        hs = self.enc(input_ids=input_ids, bbox=bbox, attention_mask=attention_mask).last_hidden_state
+        text = self.enc(input_ids=input_ids, bbox=bbox, attention_mask=attention_mask).last_hidden_state
+        hs = self.dropout(torch.cat([text, self._layout], -1))
         out = []
         for b, c in enumerate(chunks):
             if not c["pairs"]:
